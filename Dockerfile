@@ -10,13 +10,13 @@ RUN sed -i "s|gzip  on;|gzip  on; etag  off; server_tokens off; gzip_types text/
 RUN mkdir -p /var/www/ && \
   cd /var/www/ && \
   git clone https://github.com/getgrav/grav.git
-RUN cd grav && \
+RUN cd /var/www/grav && \
   /usr/bin/php bin/grav install
 RUN chmod 777 cache/ logs/ images/ assets/ user/data/ backup/ && \
   rm /etc/nginx/sites-available/default && \
   cp nginx/sites-available/* /etc/nginx/sites-enabled/
 
-COPY user /var/www/grav/
+COPY user /var/www/grav/user
 
 WORKDIR /var/www/grav/
 
