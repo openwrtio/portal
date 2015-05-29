@@ -14,6 +14,7 @@ RUN cd /var/www/grav && \
   /usr/bin/php bin/grav install
 RUN cd /var/www/grav && \
   chmod 777 cache/ logs/ images/ assets/ user/data/ backup/ && \
+  grep -lr 'googleapis' | xargs sed -i '/googleapis\.com/d' && \
   rm /etc/nginx/sites-available/*
 
 COPY user /var/www/grav/user
@@ -22,4 +23,3 @@ COPY nginx/sites-available /etc/nginx/sites-enabled/
 WORKDIR /var/www/grav/
 
 EXPOSE 80
-CMD service nginx restart
