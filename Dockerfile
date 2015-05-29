@@ -12,11 +12,12 @@ RUN mkdir -p /var/www/ && \
   git clone https://github.com/getgrav/grav.git
 RUN cd /var/www/grav && \
   /usr/bin/php bin/grav install
-RUN chmod 777 cache/ logs/ images/ assets/ user/data/ backup/ && \
-  rm /etc/nginx/sites-available/default && \
-  cp nginx/sites-available/* /etc/nginx/sites-enabled/
+RUN cd /var/www/grav && \
+  chmod 777 cache/ logs/ images/ assets/ user/data/ backup/ && \
+  rm /etc/nginx/sites-available/*
 
 COPY user /var/www/grav/user
+COPY nginx/sites-available /etc/nginx/sites-enabled/
 
 WORKDIR /var/www/grav/
 
