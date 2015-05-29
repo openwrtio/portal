@@ -21,4 +21,5 @@ COPY nginx/sites-available /etc/nginx/sites-enabled/
 
 WORKDIR /var/www/grav/
 
+EXPOSE 80
 CMD service nginx restart
