@@ -15,11 +15,33 @@ server {
     }
 
     location /user/ {
+        rewrite ^/user/accounts/(.*)$ /error redirect;
+        rewrite ^/user/config/(.*)$ /error redirect;
+        rewrite ^/user/(.*)\.(txt|md|html|php|yaml|json|twig|sh|bat)$ /error redirect;
         expires 1d;
     }
 
     location / {
         rewrite .* /index.php last;
+    }
+    location /cache {
+        rewrite ^/cache/(.*) /error redirect;
+    }
+
+    location /bin {
+        rewrite ^/bin/(.*)$ /error redirect;
+    }
+
+    location /backup {
+        rewrite ^/backup/(.*) /error redirect;
+    }
+
+    location /system {
+        rewrite ^/system/(.*)\.(txt|md|html|php|yaml|json|twig|sh|bat)$ /error redirect;
+    }
+
+    location /vendor {
+        rewrite ^/vendor/(.*)\.(txt|md|html|php|yaml|json|twig|sh|bat)$ /error redirect;
     }
 
     location ~ \.php$ {
