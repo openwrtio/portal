@@ -12,7 +12,7 @@ RUN \
   cd /var/www/ && \
   git clone https://github.com/getgrav/grav.git && \
   cd grav && \
-  bin/grav install && \
+  /usr/bin/php bin/grav install && \
   chmod 777 cache/ logs/ images/ assets/ user/data/ backup/ && \
   rm /etc/nginx/sites-available/default && \
   cp nginx/sites-available/* /etc/nginx/sites-enabled/
