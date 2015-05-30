@@ -2,8 +2,8 @@ FROM ubuntu
 MAINTAINER sinkcup <sinkcup@163.com>
 
 RUN apt-get update -qq
-RUN  apt-get upgrade -y
-RUN  apt-get install -y supervisor git wget curl nginx php5-fpm php5-gd php5-cli
+RUN apt-get upgrade -y
+RUN apt-get install -y supervisor git wget curl nginx php5-fpm php5-gd php5-cli php5-curl
 RUN sed -i "s|gzip  on;|gzip  on; etag  off; server_tokens off; gzip_types text/css application/x-javascript;|" /etc/nginx/nginx.conf
 RUN mkdir -p /var/www/ && \
   cd /var/www/ && \
