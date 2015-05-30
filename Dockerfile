@@ -1,11 +1,9 @@
 FROM ubuntu
 MAINTAINER sinkcup <sinkcup@163.com>
 
-ADD sources.list-cn /etc/apt/sources.list
-
 RUN apt-get update -qq
 RUN  apt-get upgrade -y
-RUN  apt-get install -y git wget curl nginx php5-fpm php5-gd php5-cli
+RUN  apt-get install -y supervisor git wget curl nginx php5-fpm php5-gd php5-cli
 RUN sed -i "s|gzip  on;|gzip  on; etag  off; server_tokens off; gzip_types text/css application/x-javascript;|" /etc/nginx/nginx.conf
 RUN mkdir -p /var/www/ && \
   cd /var/www/ && \
@@ -17,9 +15,12 @@ RUN cd /var/www/grav && \
   grep -lr 'googleapis' | xargs sed -i '/googleapis\.com/d' && \
   rm /etc/nginx/sites-available/*
 
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY user /var/www/grav/user
 COPY nginx/sites-available /etc/nginx/sites-enabled/
 
 WORKDIR /var/www/grav/
 
 EXPOSE 80
+
+CMD ["/usr/bin/supervisord"]
