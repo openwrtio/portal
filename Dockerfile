@@ -17,6 +17,8 @@ RUN cd /var/www/grav && \
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY user /var/www/grav/user
+COPY favicon.ico /var/www/grav/
+COPY robots.txt /var/www/grav/
 COPY nginx/sites-available /etc/nginx/sites-enabled/
 
 WORKDIR /var/www/grav/
