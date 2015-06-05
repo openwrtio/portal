@@ -2,7 +2,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
 
-    root /var/www/grav;
+    root /usr/share/nginx/html/grav;
 
     server_name _;
 
