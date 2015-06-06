@@ -25,10 +25,11 @@ title: 首页
 
 
 ## Openwrt 智能路由器 系统信息对比
+
 厂商       | OpenWrt版本 | arch   |                 cat /proc/version                   
 -----------|-----------------------------------------------------------------------|----------------------------------
 极1        | 12.09       | ar71xx | Linux version 3.3.8 \(build@DEV-9-1-243\) \(gcc version 4.6.4 20121210 \(prerelease\) \(Linaro GCC 4.6-2012.12\) \)
-极1s、2、3 | 12.09       | ralink | 
+极1s、2、3 | 12.09       | ralink | Linux version 3.3.8 \(build@DEV-9-1-243\) \(gcc version 4.6.4 20121210 \(prerelease\) \(Linaro GCC 4.6-2012.12\) \)
 优酷       | 12.09       | ramips | 
 小米       | 12.09       | ramips |
 魔豆       | 12.09       | ramips |
