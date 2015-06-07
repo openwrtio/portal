@@ -1,0 +1,19 @@
+site_name: OpenWrt.io
+pages:
+- 首页: index.md
+- 文档:
+    - '新手指南': 'docs/beginners-guide.md'
+    - '支持的硬件': 'docs/supported-devices.md'
+    - '开发者指南': 'docs/developer-guide.md'
+    - '极路由': 'docs/gee.md'
+    - '优酷路由宝': 'docs/youku.md'
+- 关于我们: about.md
+theme: flatly
+repo_url: https://coding.net/u/openwrtio/
+repo_name: Coding
+site_favicon: favicon.ico
+copyright: <a title="Coding.net代码托管" href="https://coding.net/register?key=291490cc-34c2-4ebe-a1c7-48ee327a6e83" target="_blank"><img style="border-radius:30px;background:#fff;" height="30" width="30" src="https://coding.net/static/adddcfb37896b41779bc0976326cd798.png" alt="coding.net" /></a><a title="daocloud.io持续集成" href="https://daocloud.io/" target="_blank"><img height="30" width="30" src="http://open.daocloud.io/assets/img/circle-brush.png?v=8d13291156" alt="daocloud.io" /></a><a title="帮助我们：点击注册七牛，本站将获得流量" href="https://portal.qiniu.com/signup?code=3lafkpsz7yes1" target="_blank"><img style="border-radius:30px;background:#fff;" width="30" src="http://tp2.sinaimg.cn/2651079901/180/40070305662/1" alt="七牛云储存" /></a>
+    <script type="text/javascript">
+        window.zhuge=window.zhuge||[];window.zhuge.methods="_init debug identify track trackLink trackForm page".split(" ");window.zhuge.factory=function(b){return function(){var a=Array.prototype.slice.call(arguments);a.unshift(b);window.zhuge.push(a);return window.zhuge}};for(var i=0;i<window.zhuge.methods.length;i++){var key=window.zhuge.methods[i];window.zhuge[key]=window.zhuge.factory(key)};window.zhuge.load=function(b,x){if(!document.getElementById("zhuge-js")){var a=document.createElement("script");a.type="text/javascript";a.id="zhuge-js";a.async=!0;a.src="https://zgsdk.37degree.com/zhuge-lastest.min.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c);window.zhuge._init(b,x)}};
+        window.zhuge.load('f6a2e8eed9e447ea89a63b87763ec7df');
+    </script>
