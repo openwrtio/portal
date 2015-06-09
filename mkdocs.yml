@@ -9,7 +9,7 @@ pages:
     - '优酷路由宝': 'docs/youku.md'
 - 关于我们: about.md
 theme: flatly
-repo_url: https://coding.net/u/openwrtio/
+repo_url: https://coding.net/u/openwrtio
 repo_name: Coding
 site_favicon: favicon.ico
 google_analytics: ['UA-63908544-1', 'openwrt.io']
