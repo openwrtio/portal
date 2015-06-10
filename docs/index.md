@@ -1,35 +1,40 @@
----
-title: 首页
----
+## 什么是OpenWrt？
 
-## Openwrt 智能路由器厂商 软件实力对比 
+OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [新手指南](/docs/beginners-guide/)
 
-厂商      |                     开放root                                   | /根目录可写 | 开放openwrt SDK | 内网远程控制 | 自建插件商城
-----------|----------------------------------------------------------------|-------------|-----------------|--------------|-------------
-极路由    | 是\([申请](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载ralink](http://downloads.openwrt.io/vendors/gee/ralink/)、[下载ar71xx](http://downloads.openwrt.io/vendors/gee/ar71xx/)\)              | 有 | 有
-优酷      | 否                                                             | 是          | 否              | 有           | 无
-小米      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 有           | 有
-魔豆      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.openwrt.io/vendors/mtk/)\) | 有 | 有
+\> [支持的硬件](/docs/supported-devices/)
 
-## Openwrt 智能路由器 硬件对比
+## Openwrt News 开源项目动态
 
-型号     | CPU     | RAM | ROM | 2.4G | 5G   | 价格
----------|---------|---- |-----|------|------|-----------------------------------------
-极路由3  | MT7620A | 128 | 16  | 300M | 867M | [京东￥296](http://item.jd.com/1386706.html)
-极路由2  | MT7620A | 128 | 16  | 300M | 867M | [京东￥179](http://item.jd.com/1184730.html)
-极路由1s | MT7620A | 128 | 16  | 300M |      | [京东￥109](http://item.jd.com/1105402.html)
-极路由1  | AR9331 400Mhz | 64  | 16  | 150M |      | 
-优酷     | MT7620A | 128 | 16  | 300M |      | 
-魔豆     | MT7620A | 128 | 128 | 300M | 867M | 
-小米mini | MT7620A | 128 | 16  | 300M | 867M | [官网￥129](http://www.mi.com/miwifimini)
+### 2015年5月，OpenWrt Chaos Calmer 15.05-rc1 候选版发布
 
+ * Linux kernel updated to version 3.18
+ * New mt7621 subtarget for Mediatek 11ac SoC
+ * New mt76 mac80211 based wifi driver for MTK 11ac cores.
 
-## Openwrt 智能路由器 系统信息对比
+### 2014年10月，OpenWrt Barrier Breaker 14.07 正式版发布
 
-厂商       | OpenWrt版本 | arch   |                 cat /proc/version                   
------------|-----------------------------------------------------------------------|----------------------------------
-极1        | 12.09       | ar71xx | Linux version 3.3.8 \(build@DEV-9-1-243\) \(gcc version 4.6.4 20121210 \(prerelease\) \(Linaro GCC 4.6-2012.12\) \)
-极1s、2、3 | 12.09       | ralink | Linux version 3.3.8 \(build@DEV-9-1-243\) \(gcc version 4.6.4 20121210 \(prerelease\) \(Linaro GCC 4.6-2012.12\) \)
-优酷       | 12.09       | ramips | 
-小米       | 12.09       | ramips |
-魔豆       | 12.09       | ramips |
+ * Linux kernel updated to version 3.10
+ * Native IPv6-support
+ * UCI configuration improvements
+ * The new feed https://github.com/openwrt/packages should be used from now on and package maintainers are asked to move their packages there.
+
+### 2013年4月，OpenWrt Attitude Adjustment (12.09 final) 正式版发布
+
+ * Switched to Kernel 3.3
+ * Switched to uClibc 0.9.33.2
+ * Switched to shadow passwords
+
+## Openwrt Vendors News 智能路由器厂商新闻
+
+### 2015年6月，小米发布全新小米路由
+
+配置：BCM4709C Cortex-A9双核1.4GHz、512M SLC ROM、256MB RAM，￥699。官网 [http://www.mi.com/miwifi/specs/](http://yj.youku.com/ott/lyb)
+
+### 2015年3月，极路由发布极3
+
+配置：MTK MT7620A、16M ROM、128M RAM，[京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZX0HRUBFeCFNORVgdn1VWylJYGcDKV1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D)。官网 [http://www.hiwifi.com/j3-para](http://www.hiwifi.com/j3-para)
+
+### 2014年12月，优酷发布路由宝
+
+可以赚钱的路由器：利用闲置带宽帮助优酷CDN加速，赚得优金币，可体现，[京东￥138](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZVAEYkNKTxZ%2BO0lgbAA9aylzWXR8JmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D)。官网 [http://yj.youku.com/ott/lyb](http://yj.youku.com/ott/lyb)
