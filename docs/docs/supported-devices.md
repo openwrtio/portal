@@ -1,36 +1,55 @@
-## 出厂自带OpenWrt的硬件
+## Buyers Guide 购买指南
+
+OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用） 和 出厂不带需要刷机的。
+
+出厂自带OpenWrt系统的路由器，是不是哪个厂商的都可以自由装软件？不是的，需要厂商开放root权限，才可以登录到路由器中安装软件。即使有了root，如果根目录不可写的，装软件也很麻烦，无法使用opkg软件源，只能通过解压复制来安装。所以买路由器时一定要关注这两点。请看下面的表格。
+
+如果是买普通路由器，自己刷机，则没有这两个烦恼，刷的开源固件都是开放root的。是不是任何路由器都可以刷OpenWrt系统？不是的，需要厂商或爱好者开发出来，才有系统可用。所以请按照本页面的列表进行购买。
+
+### Openwrt Vendors 智能路由器厂商 软件对比 
+
+厂商      |                     开放root                                   | /根目录可写 | 开放OpenWrt SDK | 内网远程控制 | 自建插件商城
+----------|----------------------------------------------------------------|-------------|-----------------|--------------|-------------
+极路由    | 是\([申请](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载ralink](http://downloads.OpenWrt.io/vendors/gee/ralink/)、[下载ar71xx](http://downloads.OpenWrt.io/vendors/gee/ar71xx/)\)              | 有 | 有
+优酷      | 否                                                             | 是          | 否              | 有           | 无
+小米      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 有           | 有
+魔豆      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.OpenWrt.io/vendors/mtk/)\) | 有 | 有
+
+
+
+## OOBE 出厂自带OpenWrt的硬件
 
 ### gee 极路由
 
 [http://www.hiwifi.com/](http://www.hiwifi.com/)
 
-上市时间 | 型号 | 价格 | OpenWrt | Target | Platform | CPU频率 | ROM | RAM | 无线2.4G速度 | ac无线5G速度 | 有线接口
----------|------|------|---------|--------|----------|---------|-----|-----|--------------|------------|----------
-2015年3月 | 极3 HC5861 | [京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZU4MbgJLRDNdOH0Bc34pTiFSAU0ZXF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D) | 12.09 | ralink | MTK MT7620A | 580 | 16M | 128M | 300M | 867M | WAN: 1x 100M, LAN: 1x 1000M, 1x 100M
-2014年6月 | 极1s硬盘版 HC5663 | ￥209 | 12.09 | ralink | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
-2013年11月 | 极2 HC5761 | [京东￥179](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxULFwFXGkRMR05aZUUbclFKTwxJO3UFe18AHFJHcHRmKHtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVCxcBVxpETEdOWg%3D%3D) | 12.09 | ralink | MTK MT7620A | 580 | 16M | 128M | 300M | 433M | 2x 100M
-2013年11月 | 极1s HC5661 | [京东￥109](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxUDFgJUGERMR05aZUwZVVF7XjZsO0B4UV4SXScVUUxePntXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVAxYCVBhETEdOWg%3D%3D) | 12.09 | ralink | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
-2013年3月 | 极1 HC6361 | ￥199 | 12.09 | ar71xx | Atheros AR9331 | 400 | 16M | 64M | 150M | | 3x 100M
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+2015年3月 | 极3 HC5861 | [京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZU4MbgJLRDNdOH0Bc34pTiFSAU0ZXF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 1867M | WAN: 1x 100M, LAN: 1x 1000M, 1x 100M
+2014年6月 | 极1s硬盘版 HC5663 | ￥209 | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
+2013年11月 | 极2 HC5761 | [京东￥179](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxULFwFXGkRMR05aZUUbclFKTwxJO3UFe18AHFJHcHRmKHtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVCxcBVxpETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 433M | 2x 100M
+2013年11月 | 极1s HC5661 | [京东￥109](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxUDFgJUGERMR05aZUwZVVF7XjZsO0B4UV4SXScVUUxePntXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVAxYCVBhETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
+2013年3月 | 极1 HC6361 | ￥199 | 12.09 | Atheros AR9331 | 400 | 16M | 64M | 150M | | 3x 100M
 
 ### youku 优酷路由宝
 
 [http://yj.youku.com/](http://yj.youku.com/)
 
-上市时间 | 型号 | 价格 | OpenWrt | Target | Platform | CPU频率 | ROM | RAM | 无线2.4G速度 | ac无线5G速度 | 有线接口
----------|------|------|---------|--------|----------|---------|-----|-----|--------------|------------|----------
-2014年12月 | 优酷YK-L1 | [京东￥148](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZV0FdHITQCFNOxZKSGFXSQ9LZEdhMU1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D) | 12.09 | ramips | MTK MT7620A | 580 | 32M | 128M | 300M | | 3x 100M
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+2014年12月 | 优酷YK-L1 | [京东￥148](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZV0FdHITQCFNOxZKSGFXSQ9LZEdhMU1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 32M | 128M | 300M | | 3x 100M
 
-## 需要手动刷OpenWrt的硬件
+## Flash OpenWrt 需要手动刷机的硬件
 
 ### buffalo 巴法络
 
-上市时间 | 型号 | 价格 | OpenWrt | Target | Platform | CPU频率 | ROM | RAM | 无线2.4G速度 | ac无线5G速度 | 有线接口
----------|------|------|---------|--------|----------|---------|-----|-----|--------------|------------|-----------
- | WZR-1750DHP(D) | [日亚￥870](http://goods1.moximoxi.net/goods-B00BWFK278.html) | trunk | bcm53xx | Broadcom BCM4708 | 双核800M | 128M | 512M | 450M | 1300M | 5x 1000M
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+ | WZR-1750DHP(D) | [日亚￥870](http://goods1.moximoxi.net/goods-B00BWFK278.html) | trunk | Broadcom BCM4708 | 双核800M | 128M | 512M | 450M | AC 1300M | 5x 1000M
 
 ### netgear 美国网件
 
-上市时间 | 型号 | 价格 | OpenWrt | Target | Platform | CPU频率 | ROM | RAM | 无线2.4G速度 | ac无线5G速度 | 有线接口
----------|------|------|---------|--------|----------|---------|-----|-----|--------------|------------|----------
- | WNDR4300 | [京东￥369](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFUhcHEQNSBAJQXk83HV0pYH5GXFd%2BUlV%2BbGYCXCJXcHZlJRdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVIXBxEDUgQCUF5P) | 14.07 | ar71xx | Atheros AR9344 | 560 | 128M | 128M | 300M | | 5x 1000M
- | WNDR3400 v2 | [京东￥329](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXhcHGwBWBAJQXk83UG1aSQJ0UDd4PGdqQB1XfFJcZ29zAxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBV4XBxsAVgQCUF5P) | 14.07 | brcm47xx | Broadcom BCM5357 | 530 | 8M | 64M | 300M | | 5x 100M
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+ | WNDR4300 | [京东￥369](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFUhcHEQNSBAJQXk83HV0pYH5GXFd%2BUlV%2BbGYCXCJXcHZlJRdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVIXBxEDUgQCUF5P) | 14.07 | Atheros AR9344 | 560 | 128M | 128M | 300M | n 450M | 5x 1000M
+ | WNDR3400 v2 | [京东￥329](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXhcHGwBWBAJQXk83UG1aSQJ0UDd4PGdqQB1XfFJcZ29zAxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBV4XBxsAVgQCUF5P) | 14.07 | Broadcom BCM5357 | 530 | 8M | 64M | 300M | n 300M | 5x 100M
