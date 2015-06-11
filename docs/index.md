@@ -37,4 +37,4 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ### 2014年12月，优酷发布路由宝
 
-可以赚钱的路由器：利用闲置带宽帮助优酷CDN加速，赚得优金币，可体现，[京东￥138](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZVAEYkNKTxZ%2BO0lgbAA9aylzWXR8JmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D)。官网 [http://yj.youku.com/ott/lyb](http://yj.youku.com/ott/lyb)
+可以赚钱的路由器：利用闲置带宽帮助优酷CDN加速，赚得优金币，可提现。配置：MTK MT7620A、32M ROM、128M RAM，[京东￥138](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZVAEYkNKTxZ%2BO0lgbAA9aylzWXR8JmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D)。官网 [http://yj.youku.com/ott/lyb](http://yj.youku.com/ott/lyb)
