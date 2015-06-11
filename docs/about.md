@@ -8,11 +8,11 @@
 ## 为开源做贡献
 
  * 加入开源项目 [https://coding.net/u/openwrtio](https://coding.net/u/openwrtio)，一起写代码吧。
- * 注册[七牛云储存](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)，本站将获得流量奖励，供大家下载使用。
- * 点击本站的[价格链接](/docs/supported-devices/)进行购买，本站将获得佣金，购买七牛流量供大家下载使用。
+ * 通过本站邀请链接注册[七牛云储存](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)，本站将获得流量奖励，供大家下载使用。
+ * 点击本站的[价格链接](/docs/supported-devices/)购买路由器，本站将获得佣金，用于购买七牛流量供大家下载使用。
 
 ## 感谢
 
  * 感谢 [daocloud.io](https://www.daocloud.io/) 提供免费容器和主机。
  * 感谢 [七牛云储存](https://portal.qiniu.com/signup?code=3lafkpsz7yes1) 提供每月10G免费下载流量。
- * 本站已获得七牛云储存奖励每月5G下载流量，感谢这些童鞋们：[mengskysama](blog.mengsky.net)
+ * 本站已获得七牛云储存奖励每月5G下载流量，感谢这些童鞋：[mengskysama](http://blog.mengsky.net/)
