@@ -10,10 +10,10 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 厂商      |                     开放root                                   | /根目录可写 | 开放OpenWrt SDK | OpenWrt版本 | 内核版本 | 内网远程控制 | 插件商城
 ----------|----------------------------------------------------------------|-------------|-----------------|-------------|----------|--------------|-------------
-极路由    | 是\([申请](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载ralink](http://downloads.OpenWrt.io/vendors/gee/ralink/)、[下载ar71xx](http://downloads.OpenWrt.io/vendors/gee/ar71xx/)\)          | 12.09 | 3.3.8 | 有 | 有
+极路由    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载ralink](http://downloads.openwrt.io/vendors/gee/ralink/)、[下载ar71xx](http://downloads.openwrt.io/vendors/gee/ar71xx/)\)          | 12.09 | 3.3.8 | 有 | 有
 优酷      | 否                                                             | 是          | 否              | 12.09 | 2.6.36 | 有      | 无
 小米      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 12.09 | 2.6.36 | 有      | 有
-魔豆      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.OpenWrt.io/vendors/mtk/)\) | 12.09 | 2.6.36 | 无 | 有
+魔豆      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.openwrt.io/vendors/mtk/)\) | 12.09 | 2.6.36 | 无 | 有
 
 ## OOBE 出厂自带OpenWrt的硬件
 

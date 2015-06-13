@@ -4,52 +4,55 @@
 
 ## 背景知识
 
-需要掌握：Linux常用命令和软件（apt-get、grep、nslookup、sed、ssh、telnet、vi）、Linux目录结构、网络常识（DHCP、DNS、gateway网关、netmask子网掩码、PPPoE、静态IP、路由器和交换机的区别）。
+需要掌握：Linux常用命令和软件（apt-get、grep、nslookup、sed、ssh、telnet、vi）、Linux目录结构、网络常识（DHCP、DNS、gateway网关、netmask子网掩码、PPPoE、静态IP、路由器和交换机的区别）。请自行google学习。
 
-## 了解opkg
+## root
 
-按照上一篇文档的链接，给极路由开通root权限。然后连上电脑，ssh登录进去，命令如下：
+按照[极路由官方文档](http://bbs.hiwifi.com/thread-74899-1-1.html)，开通“开发者模式”即root权限。然后就能ssh登录进去了，命令如下：
 
 ```
 ssh -p 1022 root@192.168.199.1
 ```
 
-然后查看本路由器安装了什么软件，软件源里有什么软件可以安装。
+![gee root hiwifi ssh](gee-root-hiwifi-ssh.png)
+然后可是试试各种Linux命令和程序，比如：
 
 ```
-opkg update
-opkg list
-opkg list-installed
+pwd
+ls /
+uname -a
+df -h
+ifconfig
+iptables-save
 ```
 
-尝试执行tcpdump，会报错“tcpdump: not found”，说明此软件没有安装。可自行安装，命令如下：
+还可以查看系统信息，比如：
 
 ```
-opkg install tcpdump
+cat /etc/openwrt_release
+cat /etc/openwrt_version
+cat /proc/cmdline
+cat /proc/cpuinfo
+cat /proc/version
 ```
 
-然后再执行，会发现成功了。命令如下：
+![cat openwrt release](cat-openwrt-release.png)
+
+可以看到这台极路由的Linux内核版本是3.3.8，固件版本是0.9012.1.9277s，型号是HC5761。
+
+## dropbear 1022
+
+然后打开`/etc/config/dropbear`，把1022端口修改成22，然后重启dropbear，这样以后ssh和scp就不用加端口了，就方便多了。指令如下：
 
 ```
-tcpdump -i br-lan
+vi /etc/config/dropbear
+/etc/init.d/dropbear restart
 ```
 
-可以看到opkg和Ubuntu的apt-get类似，是一个网络软件仓库，安装软件非常方便。
+![vi dropbear 1022](vi-dropbear-1022.png)
 
-## 手动下载安装ipk软件包
+路由器、服务器里是没有IDE的，所以VI是必备技能，请自行学习。
 
-## 自定义opkg src软件源
+##练习
 
-```
-vi /etc/opkg.conf
-```
-
-## 开发环境
-
-OpenWrt是Linux，所以开发也使用Linux系统。本文档使用Ubuntu系统，建议使用15.04 Desktop或者14.04 Server。如果用的是Windows，可以用免费的虚拟机Virtual Box\([virtualbox.org](https://www.virtualbox.org/)\)安装Ubuntu。
-
-在Ubuntu系统中执行下列命令，安装依赖：
-
-```
-sudo apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc
-```
+在每个分区创建一个文件，重启路由器，验证各个分区是否可写。
