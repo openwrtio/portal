@@ -1,4 +1,3 @@
-# opkg 软件源
 
 ## opkg install 自动安装
 
@@ -35,7 +34,7 @@ wget http://upgradeipk.ikcd.net/upgrade_file/ralink-HC5761/0.9012.1.9277s/packag
 opkg install ./tcpdump_4.2.1-20141110.1_ralink.ipk
 ```
 
-可以看出opkg不止可以通过软件源安装软件，还可以安装本地文件。其实还可以不用下载，直接安装链接，指令如下：
+可以看出opkg不止可以通过软件源安装软件，还可以安装本地ipk文件（ipk是OpenWrt的软件包格式）。其实还可以不用下载，直接安装链接，指令如下：
 
 ```
 opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/nodogsplash_0.9_beta9.9.6-3_ralink.ipk
@@ -61,7 +60,7 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/dnsmasq-ful
 opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/libnettle_3.1.1-1_ralink.ipk
 ```
 
-安装失败，报错："satisfy_dependencies_for: Cannot satisfy the following dependencies for libnettle:libgmp"。解决办法是：找到libgmp的下载链接，然后安装。
+安装失败，报错："satisfy_dependencies_for: Cannot satisfy the following dependencies for libnettle:libgmp"。解决办法是：找到libgmp的下载链接，然后安装。本文不再实验。
 
 ## 自定义opkg src软件源
 
@@ -92,7 +91,7 @@ opkg update
 opkg install dnsmasq-full
 ```
 
-安装失败，报错：“check_data_file_clashes: Package dnsmasq-full wants to install file /usr/sbin/dnsmasq But that file is already provided by package dnsmasq”，表示dnsmasq-full和系统以及安装的dnsmasq冲突：都需要写入`/usr/sbin/dnsmasq`文件。所以强制覆盖安装，重启软件即可，指令如下：
+安装失败，报错：“check_data_file_clashes: Package dnsmasq-full wants to install file /usr/sbin/dnsmasq But that file is already provided by package dnsmasq”，表示dnsmasq-full和系统已经安装的dnsmasq冲突：都需要写入`/usr/sbin/dnsmasq`文件。所以强制覆盖安装，重启软件即可，指令如下：
 
 ```
 opkg
@@ -102,12 +101,21 @@ opkg install --force-overwrite dnsmasq-full
 
 ![opkg install dnsmasq-full force overwrite](opkg-install-dnsmasq-full-force-overwrite.png)
 
-## 开发环境
+经过这个实验发现opkg软件源是可以修改添加的，然后就可以使用opkg自动安装，解决了依赖问题，非常方便。本站提供的软件源有这些：
 
-OpenWrt是Linux，所以开发使用Linux系统最方便。本文档使用Ubuntu系统，建议使用15.04 Desktop 64-bit或者14.04 Server 64-bit。如果用的是Windows，可以用免费的虚拟机Virtual Box\([virtualbox.org](https://www.virtualbox.org/)\)安装Ubuntu。
-
-在Ubuntu系统中执行下列命令，安装依赖：
+### 极路由gee ralink opkg 源（j1s、 j2、 j3）
 
 ```
-sudo apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc
+src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
+```
+### 极路由gee ar71xx opkg 源（j1）
+
+```
+src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ar71xx/packages
+```
+
+### 优酷 youku ramips opkg 源（YK-L1）
+
+```
+src/gz openwrtio http://downloads.openwrt.io/vendors/youku/ramips/packages
 ```

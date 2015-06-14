@@ -42,16 +42,18 @@ cat /proc/version
 
 ## dropbear 1022
 
-然后打开`/etc/config/dropbear`，把1022端口修改成22，然后重启dropbear，这样以后ssh和scp就不用加端口了，就方便多了。指令如下：
+打开`/etc/config/dropbear`，把1022端口修改成22，然后重启dropbear，以后ssh和scp就不用加端口了，就方便多了。指令如下：
 
 ```
 vi /etc/config/dropbear
 /etc/init.d/dropbear restart
+exit
+ssh root@192.168.199.1
 ```
 
 ![vi dropbear 1022](vi-dropbear-1022.png)
 
-路由器、服务器里是没有IDE的，所以VI是必备技能，请自行学习。
+路由器、服务器里没有IDE，所以VI是必备技能，请自行google。
 
 ##练习
 
