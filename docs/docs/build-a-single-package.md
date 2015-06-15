@@ -24,7 +24,7 @@ sudo apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk 
 
 如果下载链接已失效，请向厂商反馈。或者在本站进行挖掘（[downloads.openwrt.io](http://downloads.openwrt.io/)），因为本站已经把它们都下载下来了。
 
-不过由于魔豆根目录不可写，ipk无法安装，有了SDK也是然并卵。
+不过由于魔豆根目录不可写，ipk无法安装，有SDK也没法用。
 
 本文档继续以极路由为例，下载解压缩到`~/openwrt/hc5761`。
 
