@@ -52,14 +52,14 @@ ln -s ~/openwrt/packages/net/wifidog ~/openwrt/hc5761/package/
 cd ~/openwrt/hc5761
 make menuconfig
 ```
-![make menuconfig wifidog](make-menuconfig-wifidog.png)
+![make menuconfig wifidog](images/make-menuconfig-wifidog.png)
 
 编译：
 
 ```
 make package/wifidog/compile V=99
 ```
-![make wifidog ipk](make-wifidog-ipk.png)
+![make wifidog ipk](images/make-wifidog-ipk.png)
 
 可以看到编译的结果是一个ipk文件，在bin目录中。把它上传到路由器中，尝试安装并运行。
 

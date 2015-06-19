@@ -21,10 +21,10 @@ opkg install tcpdump
 tcpdump -i br-lan
 ```
 
-![opkg install](gee-opkg-install.png)
+![opkg install](images/gee-opkg-install.png)
 可以发现opkg和Ubuntu的apt-get类似，是一个网络软件仓库，一行指令就能自动下载安装软件，非常方便。
 
-## wget ipk 手动下载安装软件包
+## wget ipk 手动下载安装
 
 从上图中还能发现，opkg安装软件时会显示ipk下载链接，可以通过wget下载。尝试以下指令：
 
@@ -41,7 +41,7 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/nodogsplash
 ```
 
 像nodogsplash这种仓库里没有的软件，就需要手动下载安装。
-![opkg install nodogsplash](opkg-install-nodogsplash.png)
+![opkg install nodogsplash](images/opkg-install-nodogsplash.png)
 
 下面尝试另一种情况，通过链接安装`dnsmasq-full`，指令如下：
 
@@ -52,7 +52,7 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/dnsmasq-ful
 
 安装失败，报错："satisfy\_dependencies\_for: Cannot satisfy the following dependencies for dnsmasq-full: libnettle"，如图：
 
-![opkg install dnsmasq-full error](opkg-install-http-dnsmasq-full.png)
+![opkg install dnsmasq-full error](images/opkg-install-http-dnsmasq-full.png)
 
 这说明dnsmasq-full依赖libnettle，需要路由器里先安装它。解决办法是：在网上找到libnettle的下载链接，安装它，指令如下：
 
@@ -75,13 +75,13 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/libnettle_3
 cat /etc/opkg.conf
 ```
 
-![cat opkg conf](cat-opkg-conf.png)
+![cat opkg conf](images/cat-opkg-conf.png)
 
 然后在`/etc/opkg.conf`和`/etc/opkg.d`里的每个文件都加入一行，指令如下：
 
 ```
 echo 'src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages' >> /etc/opkg.conf
-find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz openwrt.io http://downloads.openwrt.io/vendors/gee/ralink/packages'
+find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages'
 ```
 
 然后再尝试安装dnsmasq-full，指令如下：
@@ -99,7 +99,7 @@ opkg install --force-overwrite dnsmasq-full
 /etc/init.d/dnsmasq restart
 ```
 
-![opkg install dnsmasq-full force overwrite](opkg-install-dnsmasq-full-force-overwrite.png)
+![opkg install dnsmasq-full force overwrite](images/opkg-install-dnsmasq-full-force-overwrite.png)
 
 经过这个实验发现opkg软件源是可以修改添加的，然后就可以使用opkg自动安装，解决了依赖问题，非常方便。本站提供的软件源有这些：
 

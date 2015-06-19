@@ -13,7 +13,7 @@ rom            | 极3 | 极2 | 极1s | 极1
 0.9007.1.7117s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20141105-18eea212.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20141105-3abb3bf3.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-20141105-5810b4fb.bin)
 0.9006.2.6020s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20140911-3d5f030b.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20140911-95d8bc22.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-20140911-c275a9e6.bin)
 0.9005.5384s   | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20140825-503d031a.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20140825-5deb234b.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-20140825-28ba23e5.bin)
-0.9004.3685s   | | [下载](http://downloads.openwrt.io/vendors/gee/ralink/0.9004.3685s-HC5761-sysupgrade.bin) | [下载](http://downloads.openwrt.io/vendors/gee/ralink/0.9004.3685s-HC5661-sysupgrade.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-2014060901.bin)
+0.9004.3685s   | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-2014060900.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-2014060900.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-2014060901.bin)
 
 在极路由里执行此命令，然后在网页后台点升级然后取消，即可抓取极路由rom官方下载链接：
 

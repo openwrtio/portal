@@ -14,7 +14,7 @@
 ssh -p 1022 root@192.168.199.1
 ```
 
-![gee root hiwifi ssh](gee-root-hiwifi-ssh.png)
+![gee root hiwifi ssh](images/gee-root-hiwifi-ssh.png)
 然后可是试试各种Linux命令和程序，比如：
 
 ```
@@ -36,13 +36,13 @@ cat /proc/cmdline
 cat /proc/cpuinfo
 ```
 
-![cat openwrt release](cat-openwrt-release.png)
+![cat openwrt release](images/cat-openwrt-release.png)
 
 可以看到这台极路由的Linux内核版本是3.3.8，固件版本是0.9012.1.9277s，型号是HC5761。
 
-## dropbear 1022
+## dropbear
 
-打开`/etc/config/dropbear`，把1022端口修改成22，然后重启dropbear，以后ssh和scp就不用加端口了，就方便多了。指令如下：
+dropbear是一个轻量级的ssh server，常用于路由器等单用户设备中。打开`/etc/config/dropbear`，把1022端口修改成22，然后重启dropbear，以后ssh和scp就不用加端口了，就方便多了。指令如下：
 
 ```
 vi /etc/config/dropbear
@@ -51,9 +51,9 @@ exit
 ssh root@192.168.199.1
 ```
 
-![vi dropbear 1022](vi-dropbear-1022.png)
+![vi dropbear 1022](images/vi-dropbear-1022.png)
 
-路由器、服务器里没有IDE，所以VI是必备技能，请自行google。
+路由器、服务器里没有IDE，所以VI是必备技能，请自行google学习。
 
 ##练习
 
