@@ -20,8 +20,6 @@ ssh -p 1022 root@192.168.199.1
 ```
 pwd
 ls /
-uname -a
-df -h
 ifconfig
 iptables-save
 ```
@@ -29,11 +27,13 @@ iptables-save
 还可以查看系统信息，比如：
 
 ```
+uname -a
+cat /proc/version
+df -h
 cat /etc/openwrt_release
 cat /etc/openwrt_version
 cat /proc/cmdline
 cat /proc/cpuinfo
-cat /proc/version
 ```
 
 ![cat openwrt release](cat-openwrt-release.png)
