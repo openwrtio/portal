@@ -43,24 +43,26 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/nodogsplash
 像nodogsplash这种仓库里没有的软件，就需要手动下载安装。
 ![opkg install nodogsplash](images/opkg-install-nodogsplash.png)
 
-下面尝试另一种情况，通过链接安装`dnsmasq-full`，指令如下：
+下面尝试另一种情况，通过链接安装`easycwmp`，指令如下：
 
 
 ```
-opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/dnsmasq-full_2.72-2_ralink.ipk
+opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/easycwmp_1.0.5-c1768af11a485af3f396aaf2941fd28349e48053_ralink.ipk
 ```
 
-安装失败，报错："satisfy\_dependencies\_for: Cannot satisfy the following dependencies for dnsmasq-full: libnettle"，如图：
+安装失败，报错："satisfy\_dependencies\_for: Cannot satisfy the following dependencies for easycwmp: libmicroxml shflags"，如图：
 
-![opkg install dnsmasq-full error](images/opkg-install-http-dnsmasq-full.png)
+![opkg install easycwmp error: depend shflags](images/opkg-install-depend-shflags.png)
 
-这说明dnsmasq-full依赖libnettle，需要路由器里先安装它。解决办法是：在网上找到libnettle的下载链接，安装它，指令如下：
+这说明easycwmp依赖libmicroxml和shflags，需要先安装它们。解决办法是：在网上找到libmicroxml和shflags的下载链接，安装它，指令如下：
 
 ```
-opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/libnettle_3.1.1-1_ralink.ipk
+opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/libmicroxml_2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa_ralink.ipk
+opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/shflags_1.0.3-1_ralink.ipk
 ```
+![opkg install shflags error: depend getopt](images/opkg-install-depend-getopt.png)
 
-安装失败，报错："satisfy_dependencies_for: Cannot satisfy the following dependencies for libnettle:libgmp"。解决办法是：找到libgmp的下载链接，然后安装。本文不再实验。
+可以看到libmicroxml安装成功，shflags报错："satisfy_dependencies_for: Cannot satisfy the following dependencies for shflags: getopt"。解决办法是：找到getopt的下载链接，然后安装。本文不再实验。
 
 ## 自定义opkg src软件源
 
@@ -84,30 +86,23 @@ echo 'src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages' 
 find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages'
 ```
 
-然后再尝试安装dnsmasq-full，指令如下：
+然后再尝试安装easycwmp，指令如下：
 
 ```
 opkg update
-opkg install dnsmasq-full
+opkg install easycwmp
 ```
 
-安装失败，报错：“check_data_file_clashes: Package dnsmasq-full wants to install file /usr/sbin/dnsmasq But that file is already provided by package dnsmasq”，表示dnsmasq-full和系统已经安装的dnsmasq冲突：都需要写入`/usr/sbin/dnsmasq`文件。所以强制覆盖安装，重启软件即可，指令如下：
+![opkg install easycwmp](images/opkg-install-easycwmp.png)
 
-```
-opkg
-opkg install --force-overwrite dnsmasq-full
-/etc/init.d/dnsmasq restart
-```
-
-![opkg install dnsmasq-full force overwrite](images/opkg-install-dnsmasq-full-force-overwrite.png)
-
-经过这个实验发现opkg软件源是可以修改添加的，然后就可以使用opkg自动安装，解决了依赖问题，非常方便。本站提供的软件源有这些：
+经过这个实验发现opkg软件源是可修改的，然后就可以用opkg自动安装了，解决了依赖问题，非常方便。本站提供的软件源有这些：
 
 ### 极路由gee ralink opkg 源（j1s、 j2、 j3）
 
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
 ```
+
 ### 极路由gee ar71xx opkg 源（j1）
 
 ```
