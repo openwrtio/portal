@@ -2,7 +2,7 @@
 
 OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用） 和 出厂不带需要刷机的。
 
-出厂自带OpenWrt系统的路由器，是不是哪个厂商的都可以自由装软件？不是的，需要厂商开放root权限，才可以登录到路由器中安装软件。即使有了root，如果根目录不可写的，装软件也很麻烦，无法使用opkg软件源，只能通过解压复制来安装。所以买路由器时一定要关注这两点。请看下面的表格。
+出厂自带OpenWrt系统的路由器，是不是哪个厂商的都可以自由装软件？不是的，需要厂商开放root权限，才可以登录到路由器中安装软件。即使有了root，如果根目录不可写的，装软件也很麻烦，无法使用opkg软件源，只能通过解压复制来安装。所以买路由器时一定要关注这两点。请看下面的表格，建议购买极2或极3。
 
 如果是买普通路由器，自己刷机，则没有这两个烦恼，刷的开源固件都是开放root的。是不是任何路由器都可以刷OpenWrt系统？不是的，需要达到一定的配置，而且有厂商或爱好者进行开发适配，才有系统可用。所以请按照本页面的列表进行购买。
 
@@ -24,7 +24,7 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
 2015年3月 | 极3 HC5861 | [京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZU4MbgJLRDNdOH0Bc34pTiFSAU0ZXF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 1867M | WAN: 1x 100M, LAN: 1x 1000M, 1x 100M
-2014年6月 | 极1s硬盘版 HC5663 | ￥209 | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
+2014年6月 | 极1s硬盘版 HC5663 | [京东￥209](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcAFwRRG0RMR05aZRxSRnFad1BMOxZ4TF5RcwBUWwwDJ11XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABcEURtETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
 2013年11月 | 极2 HC5761 | [京东￥179](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxULFwFXGkRMR05aZUUbclFKTwxJO3UFe18AHFJHcHRmKHtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVCxcBVxpETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 433M | 2x 100M
 2013年11月 | 极1s HC5661 | [京东￥109](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxUDFgJUGERMR05aZUwZVVF7XjZsO0B4UV4SXScVUUxePntXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVAxYCVBhETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
 2013年3月 | 极1 HC6361 | ￥199 | 12.09 | Atheros AR9331 | 400 | 16M | 64M | 150M | | 3x 100M
@@ -35,13 +35,13 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
-2014年12月 | 优酷YK-L1 | [京东￥148](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZV0FdHITQCFNOxZKSGFXSQ9LZEdhMU1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 32M | 128M | 300M | | 3x 100M
+2014年12月 | 优酷YK-L1 | [京东￥138](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZV0FdHITQCFNOxZKSGFXSQ9LZEdhMU1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 32M | 128M | 300M | | 3x 100M
 
 ### mi 小米路由
 
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
-2015年6月 | 新小米路由 | ￥699 | | Boardcom BCM4709C | 双核1.4G | 512M | 256M | 300M | 867M | 4x 1000M
+2015年6月 | 新小米路由 | [￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxIEEwZdE0RMR05aZWYCfGkRZj5lORJKaXRQfyUXRVZyJmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSBBMGXRNETEdOWg%3D%3D) | | Boardcom BCM4709C | 双核1.4G | 512M | 256M | 300M | 867M | 4x 1000M
 2014年4月 | 小米路由 | [京东￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcAFwFWHERMR05aZUYZVGkVbCBiPm8Fa28Jc0Fjd3AGCmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABcBVhxETEdOWg%3D%3D) | | Boardcom BCM4709 | 双核1G | 32M | 256M | 300M | 867M | 3x 1000M
 2014年4月 | 小米路由mini | [京东￥129](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxYEGgdTG0RMR05aZXgPD0pOBRx5OXZwFkFUQ1xRaVQDNWtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsWBBoHUxtETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | 867M | 3x 100M
 

@@ -29,7 +29,7 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ### 2015年6月，小米发布全新小米路由
 
-配置：BCM4709C Cortex-A9双核1.4GHz、512M SLC ROM、256MB RAM，￥699。官网 [http://www.mi.com/miwifi/specs/](http://www.mi.com/miwifi/specs/)
+配置：BCM4709C Cortex-A9双核1.4GHz、512M SLC ROM、256MB RAM，[京东￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxIEEwZdE0RMR05aZWYCfGkRZj5lORJKaXRQfyUXRVZyJmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSBBMGXRNETEdOWg%3D%3D)。官网 [http://www.mi.com/miwifi/specs/](http://www.mi.com/miwifi/specs/)
 
 ### 2015年3月，极路由发布极3
 
@@ -46,3 +46,7 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 ### 2014年4月，小米发布小米路由器 mini
 
 配置：MTK MT7620A、16M ROM、128M RAM，[京东第三方￥119](http://union.click.jd.com/jdc?e=&p=AyIBZRlaFgoUA1EaWSUDIkMKQwVKMktCEFpQCxxKQgFHRE5XDVULR0UVABAFUxxTFgMRGAxeB0gyGnMzWl1TYGpiNnkQXkRJcl1yKRdAcgtZK1kUARMDVBJYHDISB1QbXyUyc3VlKw%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABABUhNYFAENXhBHBg%3D%3D)或[京东自营￥149](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxYEGgdTG0RMR05aZU4fbHtiTj1gOXF4VHU3TjlhC3BRA2tXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsWBBoHUxtETEdOWg%3D%3D)，官网 [http://www.mi.com/miwifimini/](http://www.mi.com/miwifimini/)
+
+### 2013年3月，极路由发布极1国际版
+
+极1国际版内置免费番茄插件。配置：Atheros AR9331、16M ROM、64M RAM。使用OpenWrt系统，开创了智能路由器行业，并遵守开源协议，开放了代码。
