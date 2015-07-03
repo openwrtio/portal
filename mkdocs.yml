@@ -1,6 +1,6 @@
-site_name: OpenWrt.io
+site_name: 'OpenWrt.io'
 pages:
-- 首页: index.md
+- 首页: 'index.md'
 - 文档:
     - '新手指南': 'docs/beginners-guide.md'
     - '支持的硬件': 'docs/supported-devices.md'
@@ -10,10 +10,10 @@ pages:
     - '极路由': 'docs/gee.md'
     - '优酷路由宝': 'docs/youku.md'
     - '魔豆': 'docs/modou.md'
-- 关于我们: about.md
-theme: flatly
-repo_url: https://coding.net/u/openwrtio
-repo_name: Coding
+- 关于我们: 'about.md'
+theme: 'flatly'
+repo_url: 'http://downloads.openwrt.io/'
+repo_name: '下载'
 site_favicon: favicon.ico
 google_analytics: ['UA-63908544-1', 'openwrt.io']
 copyright: <a title="Coding.net代码托管" href="https://coding.net/register" target="_blank"><img style="border-radius:30px;background:#fff;" height="30" width="30" src="https://coding.net/static/adddcfb37896b41779bc0976326cd798.png" alt="coding.net" /></a><a title="daocloud.io持续集成" href="https://daocloud.io/" target="_blank"><img height="30" width="30" src="http://open.daocloud.io/assets/img/circle-brush.png?v=8d13291156" alt="daocloud.io" /></a><a title="帮助我们：点击注册七牛，本站将获得流量" href="https://portal.qiniu.com/signup?code=3lafkpsz7yes1" target="_blank"><img style="border-radius:30px;background:#fff;" width="30" src="http://tp2.sinaimg.cn/2651079901/180/40070305662/1" alt="七牛云储存" /></a>
