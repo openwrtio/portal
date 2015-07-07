@@ -2,7 +2,7 @@
 title: 文档
 ---
 
-## 极路由 rom下载
+## 极路由固件下载 hiwifi ROM download
 
 rom            | 极3 HC5861 | 极2 HC5761 | 极1s HC5661 | 极1 HC6361
 ---------------|-----|-----|------|----
@@ -22,22 +22,28 @@ rom            | 极3 HC5861 | 极2 HC5761 | 极1s HC5661 | 极1 HC6361
 tcpdump -i eth2.2 host ur.ikcd.net -w a.cap
 ```
 
-## 极路由3 kernel vermagic
+## 查看极路由固件版本 hiwifi ROM version
+
+```
+cat /etc/openwrt_version
+```
+
+## 极路由j3 kernel vermagic
 rom            | 极3
 ---------------|----
 0.9012.1.9277s |3.3.8-1-9366384773eac1d7a54437bf481e0e6e
 
-## 极路由2 kernel vermagic
+## 极路由j2 kernel vermagic
 rom            | 极2 
 ---------------|----
 0.9010.1.8595s |3.3.8-1-28dfc55c32c354db6f9faef9daca146f
 
-## 极路由1s kernel vermagic
+## 极路由j1s kernel vermagic
 rom            | 极1s
 ---------------|-----
 0.9010.1.8595s | 3.3.8-1-9b559f8e77ad01e85dc739bc7b7f8b90
 
-## 极路由1 kernel vermagic
+## 极路由j1 kernel vermagic
 rom            | 极1
 ---------------|-----
 0.9008.2.8061s | 3.3.8-1-b4233d54b1c65faf7ee539e246a3a6ff

@@ -27,26 +27,26 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ## Openwrt Vendors News 智能路由器厂商新闻
 
-### 2015年6月，小米发布全新小米路由
+### 2015年6月，全新小米路由器发布
 
 配置：BCM4709C Cortex-A9双核1.4GHz、512M SLC ROM、256MB RAM，[京东￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxIEEwZdE0RMR05aZWYCfGkRZj5lORJKaXRQfyUXRVZyJmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSBBMGXRNETEdOWg%3D%3D)。官网 [http://www.mi.com/miwifi/specs/](http://www.mi.com/miwifi/specs/)
 
-### 2015年3月，极路由发布极3
+### 2015年3月，极路由3发布
 
 配置：MTK MT7620A、16M ROM、128M RAM，[京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZX0HRUBFeCFNORVgdn1VWylJYGcDKV1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D)。官网 [http://www.hiwifi.com/j3-para](http://www.hiwifi.com/j3-para)
 
-### 2014年12月，优酷发布路由宝
+### 2014年12月，优酷土豆路由宝发布
 
 世界上第一款可以赚钱的路由器：利用闲置带宽帮助优酷CDN加速，赚得优金币，可提现。配置：MTK MT7620A、32M ROM、128M RAM，[京东￥138](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcHFgNVGkRMR05aZVAEYkNKTxZ%2BO0lgbAA9aylzWXR8JmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXBxYDVRpETEdOWg%3D%3D)。官网 [http://yj.youku.com/ott/lyb](http://yj.youku.com/ott/lyb)
 
-### 2014年6月，魔豆发布魔豆路由器
+### 2014年6月，魔豆路由器发布
 
 配置：MTK MT7620A、128M ROM、128M RAM，[京东￥159](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxAAEwVTEkRMR05aZXIzFGlscBYbPnRCa0IMXwdOfUV%2FE3tXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsQABMFUxJETEdOWg%3D%3D)。官网 [http://www.modouwifi.com/router.html](http://www.modouwifi.com/router.html)
 
-### 2014年4月，小米发布小米路由器 mini
+### 2014年4月，小米路由器mini发布
 
 配置：MTK MT7620A、16M ROM、128M RAM，[京东第三方￥119](http://union.click.jd.com/jdc?e=&p=AyIBZRlaFgoUA1EaWSUDIkMKQwVKMktCEFpQCxxKQgFHRE5XDVULR0UVABAFUxxTFgMRGAxeB0gyGnMzWl1TYGpiNnkQXkRJcl1yKRdAcgtZK1kUARMDVBJYHDISB1QbXyUyc3VlKw%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABABUhNYFAENXhBHBg%3D%3D)或[京东自营￥149](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxYEGgdTG0RMR05aZU4fbHtiTj1gOXF4VHU3TjlhC3BRA2tXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsWBBoHUxtETEdOWg%3D%3D)，官网 [http://www.mi.com/miwifimini/](http://www.mi.com/miwifimini/)
 
-### 2013年3月，极路由发布极1国际版
+### 2013年3月，极路由1国际版发布
 
 极1国际版内置免费番茄插件。配置：Atheros AR9331、16M ROM、64M RAM。使用OpenWrt系统，开创了智能路由器行业，并遵守开源协议，开放了代码。

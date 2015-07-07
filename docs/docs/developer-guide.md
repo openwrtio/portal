@@ -8,7 +8,7 @@
 
 ## root
 
-按照[极路由官方文档](http://bbs.hiwifi.com/thread-74899-1-1.html)，开通“开发者模式”即root权限。然后就能ssh登录进去了，命令如下：
+按照[极路由官方文档](http://bbs.hiwifi.com/thread-74899-1-1.html)，开通“开发者模式”即root权限和TTL串口。然后就能ssh登录进去了，命令如下：
 
 ```
 ssh -p 1022 root@192.168.199.1
