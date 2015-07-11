@@ -64,8 +64,47 @@ make package/wifidog/compile V=99
 可以看到编译的结果是一个ipk文件，在bin目录中。把它上传到路由器中，尝试安装并运行。
 
 ```
-scp bin/ralink/packages/wifidog_1.2.1-1_ralink.ipk root@192.168.199.1:/tmp/
+scp bin/ralink/packages/wifidog\_1.2.1-1\_ralink.ipk root@192.168.199.1:/tmp/
 ssh root@192.168.199.1
-opkg install /tmp/wifidog_1.2.1-1_ralink.ipk
+opkg install /tmp/wifidog\_1.2.1-1\_ralink.ipk
 /etc/init.d/wifidog start
 ```
+
+启动wifidog，将会报错：AuthServer is not set，然后退出。如图所示：
+
+![wifidog error: AuthServer is not set](images/wifidog-authserver-not-set.png)
+
+报错是由于尚未配置wifidog，打开`/etc/wifidog.conf`，定位到13行，修改GatewayID；定位到62行，删掉行首的井号注释，修改AuthServer；定位到159行，修改FirewallRuleSet global，内容如下：
+
+```
+GatewayID 14A0F37335B
+
+AuthServer {         
+    Hostname cp.wiwiz.com
+    SSLAvailable no           
+    Path /as/s/
+}
+
+FirewallRuleSet global {
+    FirewallRule allow tcp to wiwiz.com
+}
+```
+
+如图所示：
+
+![wifidog conf change gatewayid](images/wifidog-conf-change-gatewayid.png)
+![wifidog conf change authserver](images/wifidog-conf-change-authserver.png)
+![wifidog conf change global](images/wifidog-conf-change-global.png)
+
+然后启动wifidog，手机连上此wifi，访问任何网站都会跳转到认证页面，点击“立即开始使用此网络”，即可上网。如图所示：
+
+```
+/etc/init.d/wifidog start
+```
+
+![wifidog start](images/wifidog-start.png)
+![wifidog portal](images/wifidog-portal.png)
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="docs-build-a-single-package" data-title="编译package" data-url="http://openwrt.io/docs/build-a-single-package/"></div>
+<!-- 多说评论框 end -->
