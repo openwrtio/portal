@@ -1,4 +1,4 @@
-FROM sinkcup/nginx-mkdocs:0.1.0
+FROM sinkcup/nginx-mkdocs:0.2.0
 MAINTAINER sinkcup <sinkcup@163.com>
 
 ADD . /usr/share/nginx/html/portal
