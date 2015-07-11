@@ -48,3 +48,7 @@ rom            | 极1
 ---------------|-----
 0.9008.2.8061s | 3.3.8-1-b4233d54b1c65faf7ee539e246a3a6ff
 0.9004.3685s   | 3.3.8-1-fb5489e31e5354c05e417dc9e153f815
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="docs-gee" data-title="极路由" data-url="http://openwrt.io/docs/gee/"></div>
+<!-- 多说评论框 end -->

@@ -15,3 +15,7 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。就像智�
 脱机下载是指不开电脑，用很省电的设备（比如路由器）进行下载。常见的有国内很火的迅雷远程下载、PT、emule。而且可以做到定时，当出门或者夜里等网络空闲的时候，自动开始下载指定的文件，上网时就暂停下载。提醒：请勿下载盗版电影、游戏等。
 
 这两点都是国内特有的需求，目前国内有好几家厂商生产OpenWrt智能路由器，而国外很少有厂商生产，只能是爱好者刷机（在普通路由器上安装OpenWrt）。
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="docs-beginners-guide" data-title="新手指南" data-url="http://openwrt.io/docs/beginners-guide/"></div>
+<!-- 多说评论框 end -->

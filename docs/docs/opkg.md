@@ -114,3 +114,7 @@ src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ar71xx/packages
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/youku/ramips/packages
 ```
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="docs-opkg" data-title="opkg软件源" data-url="http://openwrt.io/docs/opkg/"></div>
+<!-- 多说评论框 end -->
