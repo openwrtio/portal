@@ -47,6 +47,14 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 2014年4月 | 小米路由 | [京东￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcAFwFWHERMR05aZUYZVGkVbCBiPm8Fa28Jc0Fjd3AGCmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABcBVhxETEdOWg%3D%3D) | | Boardcom BCM4709 | 双核1G | 32M | 256M | 300M | 867M | 3x 1000M
 2014年4月 | 小米路由mini | [京东￥129](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxYEGgdTG0RMR05aZXgPD0pOBRx5OXZwFkFUQ1xRaVQDNWtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsWBBoHUxtETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | 867M | 3x 100M
 
+### modou 魔豆路由器
+
+[http://modouwifi.com/](http://modouwifi.com/)
+
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+2014年6月 | 魔豆路由M101 | [京东￥199](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxAAEwVTEkRMR05aZWIyfHR1AANrOWcYVmcXUh9Qe2cHMF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsQABMFUxJETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 128M | 128M | 300M | 433M | 3x 100M
+
 ## Flash OpenWrt 需要手动刷机的硬件
 
 ### buffalo 巴法络
