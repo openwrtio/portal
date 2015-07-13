@@ -2,12 +2,12 @@
 title: 文档
 ---
 
-## 极路由固件下载 hiwifi ROM download
+## 极路由固件下载 hiwifi ROM downloads
 
 rom            | 极3 HC5861 | 极2 HC5761 | 极1s HC5661 | 极1 HC6361
 ---------------|-----|-----|------|----
-0.9012.1.9277s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20150603-4143ebbd.bin) |
-0.9010.1.8595s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150318-5db29eb5.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150319-21e48669.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20150318-3216a3ec.bin) |
+0.9012.1.9277s | [HC5861-sysupgrade-20150603-15fa16e2.bin](http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20150603-4143ebbd.bin) |
+0.9010.1.8595s | [HC5861-sysupgrade-20150318-5db29eb5.bin](http://ur.ikcd.net/HC5861-sysupgrade-20150318-5db29eb5.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150319-21e48669.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20150318-3216a3ec.bin) |
 0.9009.2.8404s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150129-a6c370e3.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20150129-318a796b.bin) |
 0.9008.2.8061s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20141231-48642891.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20141231-805e39dd.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-20141231-4322bdfe.bin)
 0.9007.1.7117s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20141105-18eea212.bin) | [下载](http://ur.ikcd.net/HC5661-sysupgrade-20141105-3abb3bf3.bin) | [下载](http://ur.ikcd.net/tw150v1-sysupgrade-20141105-5810b4fb.bin)
