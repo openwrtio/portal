@@ -1,6 +1,6 @@
-# 编译一个package
+# 编译一个包 How to Build a Single Package
 
-## 准备编译环境
+## 准备编译环境 prerequisites
 
 OpenWrt是Linux，所以使用Linux系统进行开发很方便。本文档使用Ubuntu系统（官网：[ubuntu.com](http://www.ubuntu.com/download/desktop)，国内镜像下载：[mirrors.aliyun.com](http://mirrors.aliyun.com/ubuntu-releases/15.04/)），建议使用最新稳定版15.04 Desktop 64-bit或者14.04 Server 64-bit。如果用的是Windows或OSX，可以用免费的虚拟机Virtual Box\([virtualbox.org](https://www.virtualbox.org/)\)安装Ubuntu。
 
@@ -34,7 +34,7 @@ cd ~/openwrt/
 tar -zxvf ~/Downloads/hc5761-20140619.tar.gz -C ./
 ```
 
-## 下载并编译package
+## 下载包代码并编译 compile package
 
 以wifidog为例，由于极路由软件源中的wifidog版本太旧，所以需要自己下载编译新版。
 
@@ -61,7 +61,7 @@ make package/wifidog/compile V=99
 ```
 ![make wifidog ipk](images/make-wifidog-ipk.png)
 
-可以看到编译的结果是一个ipk文件，在bin目录中。把它上传到路由器中，尝试安装并运行。
+可以看到编译的结果是一个ipk文件，在bin目录中。把它上传到路由器中，尝试安装。
 
 ```
 scp bin/ralink/packages/wifidog\_1.2.1-1\_ralink.ipk root@192.168.199.1:/tmp/
@@ -70,11 +70,17 @@ opkg install /tmp/wifidog\_1.2.1-1\_ralink.ipk
 /etc/init.d/wifidog start
 ```
 
-启动wifidog，将会报错：AuthServer is not set，然后退出。如图所示：
+## 启动软件 start package
+
+尝试启动wifidog，将会报错：AuthServer is not set，然后退出。如图所示：
+
+```
+/etc/init.d/wifidog start
+```
 
 ![wifidog error: AuthServer is not set](images/wifidog-authserver-not-set.png)
 
-报错是由于尚未配置wifidog，打开`/etc/wifidog.conf`，定位到13行，修改GatewayID；定位到62行，删掉行首的井号注释，修改AuthServer；定位到159行，修改FirewallRuleSet global，内容如下：
+这是由于wifidog尚未配置，打开`/etc/wifidog.conf`，定位到13行，修改GatewayID；定位到62行，删掉行首的井号注释，修改AuthServer；定位到159行，修改FirewallRuleSet global，内容如下：
 
 ```
 GatewayID 14A0F37335B
