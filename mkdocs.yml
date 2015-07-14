@@ -7,6 +7,7 @@ pages:
     - '开发者指南': 'docs/developer-guide.md'
     - 'opkg软件源': 'docs/opkg.md'
     - '编译package': 'docs/build-a-single-package.md'
+    - '智能VPN': 'docs/smart-vpn.md'
     - '极路由': 'docs/gee.md'
     - '优酷路由宝': 'docs/youku.md'
     - '魔豆': 'docs/modou.md'
