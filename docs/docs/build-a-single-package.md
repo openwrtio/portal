@@ -2,7 +2,7 @@
 
 ## 准备编译环境 prerequisites
 
-OpenWrt是Linux，所以使用Linux系统进行开发很方便。本文档使用Ubuntu系统（官网：[ubuntu.com](http://www.ubuntu.com/download/desktop)，国内镜像下载：[mirrors.aliyun.com](http://mirrors.aliyun.com/ubuntu-releases/15.04/)），建议使用最新稳定版15.04 Desktop 64-bit或者14.04 Server 64-bit。如果用的是Windows或OSX，可以用免费的虚拟机Virtual Box\([virtualbox.org](https://www.virtualbox.org/)\)安装Ubuntu。
+OpenWrt是Linux，所以使用Linux系统进行开发很方便。本文档使用Ubuntu系统（官网：[ubuntu.com](http://www.ubuntu.com/download/desktop)，国内镜像下载：[mirrors.aliyun.com](http://mirrors.aliyun.com/ubuntu-releases/15.04/)），建议使用最新稳定版15.04 Desktop 64-bit或者14.04 Server 64-bit。如果用的是Windows或OSX，可以用免费的虚拟机Virtual Box\(官网：[virtualbox.org](https://www.virtualbox.org/)，国内镜像下载：[gmirror.org](http://gmirror.org/#virtualbox)\)安装Ubuntu。
 
 在Ubuntu系统中执行下列命令，安装依赖：
 
