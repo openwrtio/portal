@@ -17,6 +17,15 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 ## OOBE 出厂自带OpenWrt的硬件
 
+### linksys 领势
+
+[http://www.linksys.com/cn/](http://www.linksys.com/cn/)
+
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+2015年7月 | WRT1900AC v2 | [京东￥1798](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEABUGURMR05aZRsoY0toWAZcPklaYEwdTV1wRRBBC3tXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFg9QHVoXBg%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABAAVBlETEdOWg%3D%3D) | 14.07 | Marvell 88F6820 | 双核1.3G | 128M | 512M | 600M | AC 1300M | 5x 1000M
+2015年7月 | WRT1200AC | [京东￥1298](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEANdH0RMR05aZW86Q0NzeCdrOXdgEA48HjtUWXZjLE1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFQFVGVkXBw%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABADXR9ETEdOWg%3D%3D) | 14.07 | Marvell 88F6820 | 双核1.3G | 128M | 512M | 400M | AC 867M | 5x 1000M
+
 ### gee 极路由
 
 [http://www.hiwifi.com/](http://www.hiwifi.com/)

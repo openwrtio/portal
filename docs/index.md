@@ -6,11 +6,11 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ## Openwrt News 开源项目动态
 
-### 2015年5月，OpenWrt Chaos Calmer 15.05-rc2 候选版发布
+### 2015年7月，OpenWrt Chaos Calmer 15.05-rc3 候选版发布
 
- * Linux kernel updated to version 3.18.14
- * Fixed broken ImageBuilders for most targets
- * Images (special format) for Asus brcm47xx and bcm53xx devices
+ * Linux kernel updated to version 3.18.17
+ * brcmfmac: support for BCM43602
+ * Various security updates (e.g. openssl, curl)
 
 ### 2014年10月，OpenWrt Barrier Breaker 14.07 正式版发布
 
@@ -26,6 +26,10 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
  * Switched to shadow passwords
 
 ## Openwrt Vendors News 智能路由器厂商新闻
+
+### 2015年7月，Linksys 发布 WRT1900AC 和 WRT1200AC
+
+两款配置相同之处：Marvell 88F6820双核1.3GHz、128M ROM、512M RAM、厂商提供OpenWrt 14.07和12.09系统。不同之处：WRT1900AC是4根天线，2.4G是600M，5G是1300M，[京东￥1798](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEABUGURMR05aZXBdUmoIRktmOA8FQHocBQ5gSRMFVXtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFwNcHFwWCw%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABAAVBlETEdOWg%3D%3D)；WRT1200AC是2根天线，2.4G是400M，5G是867M，[京东￥1298](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEANdH0RMR05aZU0HfWcMdFFSOUlCRgcoASIPGGpmCF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFwBWGlMXBA%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABADXR9ETEdOWg%3D%3D)。官网 [http://www.linksys.com/cn/p/P-WRT1900AC/](http://www.linksys.com/cn/p/P-WRT1900AC/)
 
 ### 2015年6月，全新小米路由器发布
 
