@@ -57,7 +57,7 @@ ssh root@192.168.199.1
 
 ##练习
 
-在每个分区创建一个文件，重启路由器，验证各个分区是否可写。
+验证各个分区是否可写。在每个分区创建一个文件，重启路由器，检查文件是否丢失。
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="docs-developer-guide" data-title="开发者指南" data-url="http://openwrt.io/docs/developer-guide/"></div>
