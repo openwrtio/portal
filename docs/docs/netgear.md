@@ -16,7 +16,7 @@ curl -T firmware.img tftp://192.168.1.1
 
 ![flash openwrt wndr3700 curl tftp](images/flash-openwrt-wndr3700-curl-tftp.png)
 
-将会很多灯同时亮起，然后自动重启。刷机到此完成，即可telnet或者http访问路由器网页后台。如图：
+将会很多灯同时亮起，然后自动重启。刷机到此完成，即可telnet或http访问路由器。如图：
 
 ![openwrt telnet](images/openwrt-telnet.png)
 ![openwrt web wndr3700v4](images/openwrt-web-wndr3700v4.png)
@@ -24,3 +24,7 @@ curl -T firmware.img tftp://192.168.1.1
 ## 参考资料
 
 Netgear WNDR3700 and WNDR37AV [http://wiki.openwrt.org/toh/netgear/wndr3700](http://wiki.openwrt.org/toh/netgear/wndr3700)
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="docs-netgear" data-title="网件" data-url="http://openwrt.io/docs/netgear/"></div>
+<!-- 多说评论框 end -->
