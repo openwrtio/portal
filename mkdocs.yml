@@ -11,6 +11,7 @@ pages:
     - '极路由': 'docs/gee.md'
     - '优酷路由宝': 'docs/youku.md'
     - '魔豆': 'docs/modou.md'
+    - '网件': 'docs/netgear.md'
 - 关于我们: 'about.md'
 theme: 'flatly'
 repo_url: 'http://downloads.openwrt.io/'

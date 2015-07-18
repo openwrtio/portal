@@ -10,10 +10,10 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 厂商      |                     开放root                                   | /根目录可写 | 开放OpenWrt SDK | OpenWrt版本 | 内核版本 | 内网远程控制 | 插件商城
 ----------|----------------------------------------------------------------|-------------|-----------------|-------------|----------|--------------|-------------
-[极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载ralink](http://downloads.openwrt.io/vendors/gee/ralink/)、[下载ar71xx](http://downloads.openwrt.io/vendors/gee/ar71xx/)\)          | 12.09 | 3.3.8 | 有 | 有
+[极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载](http://downloads.openwrt.io/vendors/gee/) | 12.09 | 3.3.8 | 有 | 有
 [优酷](http://yj.youku.com/ott/lyb)      | 否                                                             | 是          | 否              | 12.09 | 2.6.36 | 有      | 无
 [小米](http://miwifi.com/)      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 12.09 | 2.6.36 | 有      | 有
-[魔豆](http://www.modouwifi.com/)      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.openwrt.io/vendors/mtk/)\) | 12.09 | 2.6.36 | 无 | 有
+[魔豆](http://www.modouwifi.com/)      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.openwrt.io/vendors/modou/)\) | 12.09 | 2.6.36 | 无 | 有
 
 ## OOBE 出厂自带OpenWrt的硬件
 
@@ -78,7 +78,8 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
  | WNDR4300 | [京东￥369](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFUhcHEQNSBAJQXk83HV0pYH5GXFd%2BUlV%2BbGYCXCJXcHZlJRdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVIXBxEDUgQCUF5P) | 14.07 | Atheros AR9344 | 560 | 128M | 128M | 300M | n 450M | 5x 1000M
- | WNDR3400 v2 | [京东￥329](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXhcHGwBWBAJQXk83UG1aSQJ0UDd4PGdqQB1XfFJcZ29zAxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBV4XBxsAVgQCUF5P) | 14.07 | Broadcom BCM5357 | 530 | 8M | 64M | 300M | n 300M | 5x 100M
+ | WNDR3700 v4 | [京东￥299](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXBMBEw5XBAJQXk83DHkMfQtxVCF5Bw8KFH8pSDNoSWt8AxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJTISAlcdWBUGFgZVH1sd&t=W1dCFBBFC1pXUwkEAEAdQFkJBVwTARMOVwQCUF5P) | 14.07 | Atheros AR9344 | 560 | 128M | 128M | 300M | n 300M | 5x 1000M
+ | WNDR3400 v2 | [京东￥299](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXhcHGwBWBAJQXk83UG1aSQJ0UDd4PGdqQB1XfFJcZ29zAxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBV4XBxsAVgQCUF5P) | 14.07 | Broadcom BCM5357 | 530 | 8M | 64M | 300M | n 300M | 5x 100M
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="docs-supported-devices" data-title="支持的硬件" data-url="http://openwrt.io/docs/supported-devices/"></div>
