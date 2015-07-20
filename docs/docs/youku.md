@@ -14,7 +14,15 @@ rom版本 | 正式版硬件 | 公测版硬件
 
 ## 优酷 root
 
-优酷目前尚未开放root，需要自行注入（[http://www.eehello.com/?post=183](http://www.eehello.com/?post=183)）或者找官方申请。注入步骤：下载旧版本固件，在路由器网页后台里手动升级，然后登录路由器网页后台，查看cookie找到stok，拼成了一个链接，请求一次此链接，即可开启telnet。比如：
+优酷目前尚未开放root，需要自行注入（[http://www.eehello.com/?post=183](http://www.eehello.com/?post=183)）或者找官方申请。注入步骤：下载旧版本固件（比如1.5.0211.47252），在路由器网页后台里手动升级（其实是降级），然后登录路由器网页后台，找到stok，拼成了一个链接，请求一次此链接，即可开启telnet。如图：
+
+![youku downgrade](images/youku-downgrade.png)
+![youku downgrade success](images/youku-downgrade-success.png)
+
+随便点一个链接，发现链接中出现stok即可。把注入语句加到后面，请求一次，如图：
+
+
+![youku stok](images/youku-stok.png)
 
 ```
 http://192.168.11.1/cgi-bin/luci/;stok=138f1073740bace4e2f9b200241335a0/api/devices/allowConnect?mac=%3Bpasswd%20-d%20root%3B
@@ -22,13 +30,13 @@ http://192.168.11.1/cgi-bin/luci/;stok=138f1073740bace4e2f9b200241335a0/api/devi
 
 ![youku inject](images/youku-inject.png)
 
-开启以后，telnet即可登录，命令如下：
+然后即可使用telnet登录，命令如下：
 
 ```
 telnet 192.168.11.1
 ```
 
-然后修改`/etc/opkg.conf`，把无效的源删除，加入新的源。然后安装dropbear并启动，即可开启ssh，还要给root设置密码，命令如下：
+然后修改`/etc/opkg.conf`，把无效的源删除，加入有效的源。然后安装dropbear并启动，即可开启ssh，还要给root设置密码，命令如下：
 
 ```
 sed -i '/^src\/gz youku /d' /etc/opkg.conf
@@ -42,12 +50,13 @@ passwd
 ![youku YK-L1 opkg](images/youku-opkg.png)
 ![youku install dropbear](images/youku-install-dropbear.png)
 
-以后就可以使用ssh登录了，命令如下：
+退出telnet。以后就可以使用ssh登录了，命令如下：
 
 ```
+exit
 ssh root@192.168.11.1
 ```
-![youku YK-L1 ssh](images/ssh-youku-banner.png)
+![youku ssh banner](images/ssh-youku-banner.png)
 
 ## 分区、内核等系统信息
 
