@@ -32,7 +32,7 @@ cat /proc/cpuinfo
 
 ## 官方 opkg 配置
 
-可以看到小米路由器的opkg源为假地址，官方不提供opkg源，而且安装目录不是`/`，而是`/data`，难以安装自己下载的各种ipk。`opkg list-installed`为空，说明对opkg的支持很差。
+可以看到小米路由器的opkg源为假地址，官方不提供opkg源，而且安装目录不是`/`，而是`/data`，难以安装自己下载的各种ipk。`opkg list-installed`为空，说明对opkg的支持很差，建议OpenWrt开发者不要购买。
 
 ```
 src/gz attitude_adjustment http://downloads.openwrt.org/attitude_adjustment/12.09/brcm4709/R2D/packages
@@ -61,3 +61,7 @@ find / -name '1.txt'
 重启之后，还剩这些：
 
 ![miwifi r2d test disk writeable after reboot](images/miwifi-r2d-test-disk-writeable-after-reboot.png)
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="docs-miwifi" data-title="小米路由器" data-url="http://openwrt.io/docs/miwifi/"></div>
+<!-- 多说评论框 end -->
