@@ -53,7 +53,7 @@ ssh root@192.168.199.1
 
 ![vi dropbear 1022](images/vi-dropbear-1022.png)
 
-路由器、服务器里没有IDE，所以VI是必备技能，请自行google学习。
+路由器、服务器里没有IDE，常用的是vi编辑器，是必备技能，请自行google学习。
 
 ##练习
 
