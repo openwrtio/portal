@@ -64,10 +64,11 @@ make package/wifidog/compile V=99
 可以看到编译的结果是一个ipk文件，在bin目录中。把它上传到路由器中，尝试安装。
 
 ```
-scp bin/ralink/packages/wifidog_1.2.1-1_ralink.ipk root@192.168.199.1:/tmp/
+scp bin/ralink/packages/wifidog_1.2.1-2_ralink.ipk root@192.168.199.1:/tmp/
 ssh root@192.168.199.1
-opkg install /tmp/wifidog_1.2.1-1_ralink.ipk
-/etc/init.d/wifidog start
+opkg update
+for filename in `grep -lr wifidog /var/opkg-lists/`; do sed -i 's/^Package: wifidog$/Package: wifidog-deleted/g' $filename; done
+opkg install /tmp/wifidog_1.2.1-2_ralink.ipk
 ```
 
 ## 启动软件 start package
@@ -80,14 +81,13 @@ opkg install /tmp/wifidog_1.2.1-1_ralink.ipk
 
 ![wifidog error: AuthServer is not set](images/wifidog-authserver-not-set.png)
 
-这是由于wifidog尚未配置，打开`/etc/wifidog.conf`，定位到13行，修改GatewayID；定位到62行，删掉行首的井号注释，修改AuthServer；定位到159行，修改FirewallRuleSet global，内容如下：
+这是由于wifidog尚未配置，修改`/etc/wifidog.conf`，定位到15行，删掉行首的井号注释，修改GatewayID；定位到81行，删掉行首的井号注释，修改AuthServer；定位到243行，修改FirewallRuleSet global，内容如下：
 
 ```
 GatewayID 14A0F37335B
 
 AuthServer {         
     Hostname cp.wiwiz.com
-    SSLAvailable no           
     Path /as/s/
 }
 
