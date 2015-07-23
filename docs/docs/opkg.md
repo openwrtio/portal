@@ -37,11 +37,8 @@ opkg install ./tcpdump_4.2.1-20141110.1_ralink.ipk
 可以看出opkg不止可以通过软件源安装软件，还可以安装本地ipk文件（ipk是OpenWrt的软件包格式）。其实还可以不用下载，直接安装链接，指令如下：
 
 ```
-opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/nodogsplash_0.9_beta9.9.6-3_ralink.ipk
+opkg install http://upgradeipk.ikcd.net/upgrade_file/ralink-HC5761/0.9012.1.9277s/packages/tcpdump_4.2.1-20141110.1_ralink.ipk
 ```
-
-像nodogsplash这种仓库里没有的软件，就需要手动下载安装。
-![opkg install nodogsplash](images/opkg-install-nodogsplash.png)
 
 下面尝试另一种情况，通过链接安装`easycwmp`，指令如下：
 
