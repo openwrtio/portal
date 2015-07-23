@@ -42,7 +42,7 @@ tar -zxvf ~/Downloads/hc5761-20140619.tar.gz -C ./
 
 ```
 cd ~/openwrt/
-git clone git@git.coding.net:openwrtio/packages.git
+git clone git://git.coding.net/openwrtio/packages.git
 ln -s ~/openwrt/packages/net/wifidog ~/openwrt/hc5761/package/
 ```
 
@@ -64,9 +64,9 @@ make package/wifidog/compile V=99
 可以看到编译的结果是一个ipk文件，在bin目录中。把它上传到路由器中，尝试安装。
 
 ```
-scp bin/ralink/packages/wifidog\_1.2.1-1\_ralink.ipk root@192.168.199.1:/tmp/
+scp bin/ralink/packages/wifidog_1.2.1-1_ralink.ipk root@192.168.199.1:/tmp/
 ssh root@192.168.199.1
-opkg install /tmp/wifidog\_1.2.1-1\_ralink.ipk
+opkg install /tmp/wifidog_1.2.1-1_ralink.ipk
 /etc/init.d/wifidog start
 ```
 
