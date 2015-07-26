@@ -5,8 +5,8 @@
 
 ```
 opkg update
-opkg list
 opkg list-installed
+opkg list
 ```
 
 尝试执行tcpdump，会报错“tcpdump: not found”，说明此软件没有安装。可自行安装，命令如下：
@@ -22,7 +22,8 @@ tcpdump -i br-lan
 ```
 
 ![opkg install](images/gee-opkg-install.png)
-可以发现opkg和Ubuntu的apt-get类似，是一个网络软件仓库，一行指令就能自动下载安装软件，非常方便。
+
+可以发现opkg和Ubuntu的apt-get类似，和OSX下的brew也类似，是一个网络软件仓库，一行指令就能自动下载安装软件，非常方便。如果对Ubuntu和OSX都不熟悉，请先自行学习一个，再来折腾路由器。
 
 ## wget ipk 手动下载安装
 
@@ -59,7 +60,7 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/shflags_1.0
 ```
 ![opkg install shflags error: depend getopt](images/opkg-install-depend-getopt.png)
 
-可以看到libmicroxml安装成功，shflags报错："satisfy_dependencies_for: Cannot satisfy the following dependencies for shflags: getopt"。解决办法是：找到getopt的下载链接，然后安装。本文不再实验。
+可以看到libmicroxml安装成功，shflags报错："satisfy\_dependencies\_for: Cannot satisfy the following dependencies for shflags: getopt"。解决办法是：找到getopt的下载链接，然后安装。本文不再实验。
 
 ## 自定义opkg src软件源
 
@@ -98,6 +99,12 @@ opkg install easycwmp
 
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
+```
+
+### 极路由gee mediatek opkg 源（j1s新版HC5661A）
+
+```
+src/gz openwrtio http://downloads.openwrt.io/vendors/gee/mediatek/packages
 ```
 
 ### 极路由gee ar71xx opkg 源（j1）
