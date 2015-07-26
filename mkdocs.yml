@@ -8,6 +8,7 @@ pages:
     - 'opkg软件源': 'docs/opkg.md'
     - '编译package': 'docs/build-a-single-package.md'
     - '智能VPN': 'docs/smart-vpn.md'
+    - '刷机': 'docs/flashing.md'
     - '极路由': 'docs/gee.md'
     - '优酷路由宝': 'docs/youku.md'
     - '小米路由': 'docs/miwifi.md'
