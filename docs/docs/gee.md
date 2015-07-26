@@ -24,6 +24,53 @@ rom版本        | 极3 HC5861 | 极2 HC5761 | 极1s新款 HC5661A
 tcpdump -i eth2.2 host ur.ikcd.net -w a.cap
 ```
 
+## 极路由刷官方原厂固件
+
+当刷机导致极路由变砖时，可尝试重置、刷机，一般都能修复。极路由支持tftp方式刷机，要求是：电脑装有tftp server，电脑IP需为192.168.1.88，固件名需为`recovery.bin`。
+
+在Ubuntu电脑上先安装tftp，指令如下：
+
+```
+sudo apt-get install tftpd-hpa tftp-hpa
+```
+
+然后修改配置`/etc/default/tftpd-hpa`，否则第一次下载成功，以后都会失败报错："Transfer timed out."。
+
+```
+sudo sed -i 's/^TFTP_ADDRESS.*/TFTP_ADDRESS="0.0.0.0:69"/' /etc/default/tftpd-hpa
+```
+
+然后把固件拷进去，指令如下：
+
+```
+sudo chmod 777 /var/lib/tftpboot/
+cp ~/Downloads/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin /var/lib/tftpboot/recovery.bin
+chmod a+r /var/lib/tftpboot/recovery.bin
+sudo service tftpd-hpa restart
+```
+
+需要测试一下能否正常下载，指令如下：
+
+```
+cd ~
+tftp localhost
+tftp> get recovery.bin
+tftp> q
+ll recovery.bin
+```
+
+![ubuntu tftp](images/ubuntu-tftp.png)
+
+然后把电脑IP设置为192.168.1.88，如果电脑有双网卡的话，会很方便。如图：
+
+![ubuntu static ip](images/ubuntu-static-ip.png)
+
+然后按住极路由的RESET键（极3直接按，极2等老机器需要用尖锐物（笔、取卡针、通针等）），给极路由通电。
+
+观察电脑中tftp server的发送情况（可通过网速看出来），传输完毕即可松开RESET键。
+
+路由器面板的多个灯会轮流亮起（跑马灯效果），跑完以后，路由器自动重启，刷机即完成。
+
 ## 网页查看极路由设备型号和固件版本
 
 路由器网页后台的页脚，能看到“系统版本：设备型号 - 固件版本”，如图：
