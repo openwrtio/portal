@@ -26,7 +26,7 @@ tcpdump -i eth2.2 host ur.ikcd.net -w a.cap
 
 ## 极路由刷官方原厂固件
 
-当刷机导致极路由变砖时，可尝试重置、刷机，一般都能修复。极路由支持tftp方式刷机，要求是：电脑装有tftp server，电脑IP需为192.168.1.88，固件名需为`recovery.bin`。
+当极路由变砖无法正常工作时，可尝试刷机，一般都能修复。极路由支持tftp方式刷机，要求是：电脑装有tftp server，电脑IP需为192.168.1.88，固件名需为`recovery.bin`。
 
 在Ubuntu电脑上先安装tftp，指令如下：
 
