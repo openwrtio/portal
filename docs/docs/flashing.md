@@ -4,7 +4,7 @@
 
 ## 下载OpenWrt开源固件
 
-极路由的OpenWrt固件在这里下载：[github.com](https://github.com/rssnsj/openwrt-hc5x61/releases) 或 [本站镜像](http://downloads.openwrt.io/barrier_breaker/14.07/ramips/mt7620a/)，极2的型号为HC5761，所以下载`openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin`即可。为防止变砖以后无法修复，所以建议先对uboot进行解锁，极2下载`HC5761-uboot.bin`即可。
+极路由的OpenWrt固件在这里下载：[github.com](https://github.com/rssnsj/openwrt-hc5x61/releases) 或 [本站镜像](http://downloads.openwrt.io/barrier_breaker/14.07/ramips/mt7620a/)，极2的型号为HC5761，所以下载`openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin`即可。
 
 ## 路由器刷入OpenWrt
 
@@ -12,16 +12,16 @@
 
 ```
 scp ~/Downloads/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin root@192.168.199.1:/tmp/
-scp ~/Downloads/HC5761-uboot.bin root@192.168.199.1:/tmp/
 ssh root@192.168.199.1
 cd /tmp
-mtd write HC5761-uboot.bin u-boot
 sysupgrade -F -n openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin
 ```
 
-![mtd uboot and sysupgrade](images/mtd-uboot-and-sysupgrade.png)
+![gee sysupgrade](images/gee-sysupgrade.png)
 
-刷机完毕，shell窗口会卡住，关闭即可。待路由器重启完毕，电脑断开网络重连，即可使用telnet和http管理路由器，会看到下面的画面，需要给root帐号设置密码，然后才可以使用ssh登录。如果刷机失败，路由器无法telnet、http或ssh，则需要刷回官方原厂固件，请按照此文档：[http://openwrt.io/docs/gee/](http://openwrt.io/docs/gee/)
+刷机完毕，shell窗口会卡住，关闭即可。待路由器重启完毕，电脑断开网络重连，即可使用telnet和http管理路由器，会看到下面的画面，需要给root帐号设置密码，然后才可以使用ssh登录。如果刷机失败，路由器无法telnet、http或ssh，也不用担心，刷回官方原厂固件即可，请按照此文档：[http://openwrt.io/docs/gee/](http://openwrt.io/docs/gee/)。
+
+如果刷机成功，登录指令如下：
 
 ```
 telnet 192.168.1.1
