@@ -1,4 +1,4 @@
-# 开发极路由应用
+# 开发极路由云插件
 
 学会了编译ipk，也学会了opkg安装软件之后，下面讲解如何开发极路由应用（又称为APP或插件）。
 
@@ -56,7 +56,7 @@ status() {
 
 ## 发布到插件市场
 
-把脚本拷贝到路由器中，手动执行安装是可以的，但如何提供给大家方便的安装？极路由做了插件市场和开放平台，注册一个开发者帐号（[https://open.hiwifi.com/](https://open.hiwifi.com/)），申请一个应用，把插件打包上传，即可在插件市场里安装（[https://app.hiwifi.com/](https://app.hiwifi.com/)）。可通过“路由器后台”——》“云插件”进入市场，如果尚未发布，则在“我开发的”页面里安装。
+把脚本拷贝到路由器中，手动执行安装是可以的，但如何提供给大家方便的安装？极路由做了插件市场和开放平台，注册一个开发者帐号（[https://open.hiwifi.com/](https://open.hiwifi.com/)），申请一个应用，把插件打包上传，即可在插件市场里安装（[https://app.hiwifi.com/](https://app.hiwifi.com/)）。可通过“路由器后台”——》“云插件”进入市场，尚未发布时，在“我开发的”页面里安装。如果提交审核上线，用户就能看到了。
 
 ```
 git clone git://git.coding.net/openwrtio/super-developer-for-hiwifi-os.git
@@ -135,12 +135,59 @@ install() {
 ![极路由 安装插件 内网分发](images/gee-install-app-lan-distribution.png)
 ![极路由 安装插件 内网分发 网页配置](images/gee-install-app-lan-distribution-web-config.png)
 
-然后提交审核上线，用户就能看到了。
+## 自定义opkg软件仓库的插件
+
+在刚才的`script`文件中，还会看到这些代码：
+
+```
+install() {
+    set_opkg_src
+    opkg update
+
+    opkg install nodogsplash
+}
+
+get_arch() {
+    opkg print-architecture | grep "ralink" >/dev/null
+    if [ $? -eq 0 ]; then
+        echo "ralink"
+        return 0
+    fi
+    opkg print-architecture | grep "ar71xx" >/dev/null
+    if [ $? -eq 0 ]; then
+        echo "ar71xx"
+        return 0
+    fi
+    echo "<User-Echo>get arch失败"
+    exit 1
+}
+
+set_opkg_src() {
+    echo "set_opkg_src start"
+    arch=`get_arch`
+    tmp=$(grep 'src/gz openwrtio ' /etc/opkg.conf)
+    if [ $? -eq 0 ]; then
+        return 0
+    fi
+    openwrtio_src='http://downloads.openwrt.io/vendors/gee/'$arch'/packages'
+    #gee use /etc/opkg.conf and /etc/opkg.d/*.conf
+    echo 'src/gz openwrtio '$openwrtio_src >> /etc/opkg.conf
+    for one_file in $(find /etc/opkg.d/ -iname '*.conf'); do
+        echo 'src/gz openwrtio '$openwrtio_src >> $one_file
+    done
+    echo "set_opkg_src end"
+    return 0
+}
+```
+
+可以看出这段代码添加了opkg软件仓库，然后安装了nodogsplash这个软件，这是因为极路由官方仓库里没有这个软件（也没有地方给大家提交软件），开发者就需要从别的地方安装。极路由有多个架构（比如ar71xx和ralink），所以代码里先判断架构，然后添加不同的源（源列表在以前的文档里：[http://openwrt.io/docs/opkg/#gee-ralink-opkg-j1s-j2-j3](http://openwrt.io/docs/opkg/#gee-ralink-opkg-j1s-j2-j3)）。
+
+通过网页（比如[http://downloads.openwrt.io/vendors/gee/ralink/packages/](http://downloads.openwrt.io/vendors/gee/ralink/packages/)）或者命令（`opkg list`）可以列出所有软件，如果缺少你想要的软件，怎么办？且听下回分解。
 
 ## 练习题
 
 尝试为“超级开发者”做一个网页配置界面，实现修改端口的功能。
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-create-gee-app" data-title="开发极路由插件" data-url="http://openwrt.io/docs/create-gee-app/"></div>
+<div class="ds-thread" data-thread-key="docs-create-gee-app" data-title="开发极路由云插件" data-url="http://openwrt.io/docs/create-gee-app/"></div>
 <!-- 多说评论框 end -->
