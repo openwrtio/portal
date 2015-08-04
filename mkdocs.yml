@@ -11,6 +11,7 @@ pages:
     - '刷机': 'docs/flashing.md'
     - '开发极路由云插件': 'docs/create-gee-app.md'
     - '搭建opkg软件仓库': 'docs/create-opkg-package-repository.md'
+    - '编译固件': 'docs/build-firmware.md'
     - '极路由': 'docs/gee.md'
     - '优酷路由宝': 'docs/youku.md'
     - '小米路由': 'docs/miwifi.md'
