@@ -77,10 +77,9 @@ cat /etc/opkg.conf
 
 ![cat opkg conf](images/cat-opkg-conf.png)
 
-然后在`/etc/opkg.conf`和`/etc/opkg.d`里的每个文件都加入一行，指令如下：
+然后在`/etc/opkg.d`里的每个文件都加入一行，指令如下：
 
 ```
-echo 'src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages' >> /etc/opkg.conf
 find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages'
 ```
 
