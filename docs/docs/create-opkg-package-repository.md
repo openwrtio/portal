@@ -1,4 +1,4 @@
-极路由和优酷都提供了官方opkg软件仓库（package repository），但开发者无法提交新软件进去，一旦需要用的软件不在里面，怎么办？有两个办法：添加到开源仓库 或者 搭建自己的仓库。
+极路由和优酷都提供了官方opkg软件仓库（package repository，又称软件源），但开发者无法提交新软件进去，一旦需要用的软件不在里面，怎么办？有两个办法：添加到开源仓库 或者 搭建自己的仓库。
 
 ## 添加到开源软件仓库
 
@@ -8,9 +8,9 @@
 
 ## 搭建自己的opkg软件仓库
 
-按照之前的文档（[http://openwrt.io/docs/build-a-single-package/](http://openwrt.io/docs/build-a-single-package/)），编译了package，然后查看`bin`目录，会看到里面都是ipk文件，如图：
+按照之前的文档（[http://openwrt.io/docs/build-a-single-package/](http://openwrt.io/docs/build-a-single-package/)），编译了nodogsplash这个package，然后查看`bin`目录，会看到里面都是ipk文件，如图：
 
-![ls bin packages](images/ls-bin-packages.png)
+![ls bin packages](images/ls-bin-packages-nodogsplash.png)
 
 而在路由器中执行`opkg update`时，下载的是仓库里的`Packages.gz`文件，手动下载解压，会发现里面是ipk索引，安装时就是按照`Filename`字段下载了具体的ipk。
 
@@ -29,36 +29,43 @@ cat Package
 按照上面的原理，如果我们生成`Packages.gz`，把它和编译出来的ipk都上传到网上即可实现自己的仓库。生成`Packages.gz`的指令如下：
 
 ```
-cd ~/openwrt/hc5761/
-./scripts/ipkg-make-index.sh bin/ralink/packages/ > bin/ralink/packages/Packages
-gzip -9c bin/ralink/packages/Packages > bin/ralink/packages/Packages.gz
+cd ~/openwrt/hc5761/bin/ralink/packages/
+../../../scripts/ipkg-make-index.sh ./ > ./Packages
+gzip -9c ./Packages > ./Packages.gz
 ```
 
 ![ipkg-make-index.sh](images/ipkg-make-index.png)
 
 ### 上传到七牛云储存
 
-然后上传到哪里？建议放在云储存CDN上，下载速度快，而不要放在自己服务器上。本文以七牛云储存（每月免费10GB流量，官网[qiniu.com](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)）为例，新建一个空间，上传文件，如图：
+然后上传到哪里？建议放在云储存CDN上，下载速度快，而不要放在自己服务器上。本文以七牛云储存（每月免费10GB流量，官网[qiniu.com](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)）为例，新建一个空间，上传文件（建议输入自定义前缀，也就是目录，比如gee/ralink/packages/），如图：
 
 ![qiniu create bucket](images/qiniu-create-bucket.png)
 ![qiniu web upload](images/qiniu-web-upload.png)
 ![qiniu web upload result](images/qiniu-web-upload-result.png)
 
-点击每个文件，右边都会出现外链地址，比如：
+上传完毕，每个文件都有外链地址，比如：
 
 ```
-http://com-163-sinkcup.qiniudn.com/Packages.gz
+http://77g04y.com1.z0.glb.clouddn.com/gee/ralink/packages/Packages.gz
 ```
 
 那对应的opkg设置为：
 
 ```
-src/gz sinkcup http://com-163-sinkcup.qiniudn.com
+src/gz sinkcup http://77g04y.com1.z0.glb.clouddn.com/gee/ralink/packages
 ```
 
-把自己的源加入极路由opkg配置中，然后就能看到新版的wifidog了，如图：
+把自己的源加入极路由opkg配置中，然后就能通过opkg查看和安装nodogsplash了，如图：
 
-![gee opkg add src](images/gee-opkg-add-src.png)
+```
+find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz sinkcup http://77g04y.com1.z0.glb.clouddn.com/gee/ralink/packages'
+opkg update
+opkg list | grep nodog
+opkg install nodogsplash
+```
+
+![gee opkg add src](images/gee-opkg-add-src-install-nodogsplash.png)
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="docs-create-opkg-package-repository" data-title="搭建自己的opkg软件仓库" data-url="http://openwrt.io/docs/create-opkg-package-repository/"></div>
