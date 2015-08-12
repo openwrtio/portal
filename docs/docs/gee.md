@@ -6,6 +6,7 @@ title: 文档
 
 rom版本        | 极3 HC5861 | 极2 HC5761 | 极1s新款 HC5661A
 ---------------|------------|------------|-----------------
+0.9013.1.9653s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin) | |
 0.9012.1.9277s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin) | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150603-d1929a87.bin)
 0.9011.1.9228s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150527-5bc6d079.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150527-99cca6fc.bin) | 
 0.9011.1.9117s | | | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150518-50bf0edc.bin) | |
@@ -18,7 +19,7 @@ rom版本        | 极3 HC5861 | 极2 HC5761 | 极1s新款 HC5661A
  * 极1s HC5661 ： [http://downloads.openwrt.io/vendors/gee/ralink/](http://downloads.openwrt.io/vendors/gee/ralink/)
  * 极1 HC6361 ： [http://downloads.openwrt.io/vendors/gee/ar71xx/](http://downloads.openwrt.io/vendors/gee/ar71xx/)
 
-在极路由里执行此命令，然后在网页后台点升级然后取消，即可抓取极路由rom官方下载链接：
+在极路由里执行`tcpdump`，然后在网页后台点升级然后取消，即可抓取极路由rom官方下载链接，然后打开`a.cap`搜索`bin`即可。指令如下：
 
 ```
 tcpdump -i eth2.2 host ur.ikcd.net -w a.cap
