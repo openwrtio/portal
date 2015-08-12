@@ -7,7 +7,7 @@ OpenWrt是Linux，所以使用Linux系统进行开发很方便。本文档使用
 在Ubuntu系统中执行下列命令，安装依赖：
 
 ```
-sudo apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc flex liblzma-dev u-boot-tools
+sudo apt-get install build-essential ccache flex gawk gettext git liblzma-dev libncurses5-dev libssl-dev python subversion u-boot-tools unzip wget xsltproc zlib1g-dev
 ```
 
 ## 下载OpenWrt SDK
