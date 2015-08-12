@@ -73,7 +73,7 @@ make menuconfig
 make -j V=99 | tee build.log
 ```
 
-然后等待即可。快则几十分钟，慢则几个小时，视CPU性能而定。如果出现文件下载太慢或下载失败，则取消编译，使用下列命令，找出正在下载的文件名，然后到本站的国内镜像下载：[http://downloads.openwrt.io/dl/](http://downloads.openwrt.io/dl/)，放到`dl`目录中，然后重新编译。
+然后等待即可。快则几十分钟，慢则几个小时，视CPU性能而定。如果出现文件下载太慢或下载失败，则取消编译，使用下列命令，找出正在下载的文件名，然后到本站的国内镜像下载：[http://downloads.openwrt.io/sources/](http://downloads.openwrt.io/sources/)，放到`dl`目录中，然后重新编译。
 
 ```
 egrep "tar.bz2|tar.gz|tar.xz" build.log

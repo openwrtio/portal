@@ -30,7 +30,7 @@ PKG_MAINTAINER:=sinkcup <sinkcup@163.com>
 
 PKG_SOURCE_VERSION=$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-gateway-$(PKG_SOURCE_VERSION).tar.gz
-PKG_SOURCE_URL:=http://downloads.openwrt.io/dl/ \
+PKG_SOURCE_URL:=http://downloads.openwrt.io/sources/ \
     https://github.com/wifidog/wifidog-gateway/releases/download/$(PKG_SOURCE_VERSION)/
 PKG_MD5SUM:=3c9c35968f154b1c9224245a5d708d5f
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-gateway-$(PKG_SOURCE_VERSION)
@@ -90,12 +90,12 @@ PKG_BUILD_DIR | 是 | 编译软件包的目录
 
 可以看到wifidog的代码文件名是`wifidog-gateway-1.2.1.tar.gz`，下载路径有2个：
 
- * http://downloads.openwrt.io/dl/
+ * http://downloads.openwrt.io/sources/
  * https://github.com/wifidog/wifidog-gateway/releases/download/1.2.1/
 
 拼成完整的下载链接就是：
 
- * [http://downloads.openwrt.io/dl/wifidog-gateway-1.2.1.tar.gz](http://downloads.openwrt.io/dl/wifidog-gateway-1.2.1.tar.gz)
+ * [http://downloads.openwrt.io/sources/wifidog-gateway-1.2.1.tar.gz](http://downloads.openwrt.io/sources/wifidog-gateway-1.2.1.tar.gz)
  * [https://github.com/wifidog/wifidog-gateway/releases/download/1.2.1/wifidog-gateway-1.2.1.tar.gz](https://github.com/wifidog/wifidog-gateway/releases/download/1.2.1/wifidog-gateway-1.2.1.tar.gz)
 
 下载之后，解压缩，会发现子目录是`wifidog-gateway-1.2.1`，如图：
