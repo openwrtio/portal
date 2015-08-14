@@ -4,13 +4,14 @@
 
 ## 下载 docker image
 
-先安装docker，在Ubuntu系统里指令如下：
+先安装docker，把当前用户加入docker组。如果用户名是ubuntu，则在Ubuntu系统里指令如下：
 
 ```
-sudo apt-get install docker.io
+curl -sSL https://get.daocloud.io/docker | sh
+sudo usermod -aG docker ubuntu
 ```
 
-然后即可下载镜像，但速度会很慢，建议开启daocloud提供的国内mirror加速。步骤：注册[daocloud.io](https://account.daocloud.io/signup?invite_code=c8bkkhc1uq8i7z8nin93)，然后打开管理后台——加速器。指令如下：
+注销重登录或重启电脑，然后即可下载镜像，但速度会很慢，建议开启daocloud提供的国内mirror加速。步骤：注册[daocloud.io](https://account.daocloud.io/signup?invite_code=c8bkkhc1uq8i7z8nin93)，然后打开管理后台——加速器。指令如下：
 
 ```
 echo "DOCKER_OPTS=\"\$DOCKER_OPTS --registry-mirror=http://ec2b1153.m.daocloud.io\"" | sudo tee -a /etc/default/docker
@@ -31,7 +32,7 @@ docker run -it openwrtio/openwrt-sdk-gee-ralink /bin/bash
 
 ![docker-images-and-run](images/docker-images-and-run.png)
 
-可以看到此docker镜像是ubuntu 14.04系统，openwrt的编译环境都配好了，直接编译package即可。
+可以看到此docker镜像是Ubuntu 14.04系统，openwrt的编译环境都配好了，直接编译package即可。
 
 ## 编译 openwrt package
 
