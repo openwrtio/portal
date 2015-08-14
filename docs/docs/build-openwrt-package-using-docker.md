@@ -1,8 +1,8 @@
-#使用Docker编译OpenWrt package
+# 使用Docker编译OpenWrt Package
 
 使用Ubuntu编译openwrt时，需要安装很多依赖，然后下载SDK进行配置，每个开发者都需要重复进行这些 步骤。如果做成一个虚拟机镜像，大家下载就能用，就方便多了。使用Docker即可实现。
 
-## 下载docker image
+## 下载 docker image
 
 先安装docker，在Ubuntu系统里指令如下：
 
@@ -23,7 +23,7 @@ sudo service docker restart
 docker pull openwrtio/openwrt-sdk-gee-ralink
 ```
 
-## 启动 docker image 并编译openwrt package
+## 启动 docker image
 
 ```
 docker run -it openwrtio/openwrt-sdk-gee-ralink /bin/bash
@@ -32,6 +32,10 @@ docker run -it openwrtio/openwrt-sdk-gee-ralink /bin/bash
 ![docker-images-and-run](images/docker-images-and-run.png)
 
 可以看到此docker镜像是ubuntu 14.04系统，openwrt的编译环境都配好了，直接编译package即可。
+
+## 编译 openwrt package
+
+在docker镜像中执行下列指令即可：
 
 ```
 git clone -b for-gee-ralink git://git.coding.net/openwrtio/packages.git package/feeds
@@ -43,6 +47,15 @@ make package/feeds/admin/owmp/compile -j V=99
 ![docker-build-openwrt-package-success](images/docker-build-openwrt-package-success.png)
 
 编译成功。然后如何发布到opkg软件仓库中？请自行思考。
+
+## 本站提供的 openwrt docker
+
+所有镜像：[https://hub.docker.com/u/openwrtio/](https://hub.docker.com/u/openwrtio/)
+
+用途 | 下载命令
+-----|-----
+极路由ralink | docker pull openwrtio/openwrt-sdk-gee-ralink
+极路由mediatek | docker pull openwrtio/openwrt-sdk-gee-mediatek
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="docs-build-openwrt-package-using-docker" data-title="使用Docker编译OpenWrt package" data-url="http://openwrt.io/docs/build-openwrt-package-using-docker/"></div>
