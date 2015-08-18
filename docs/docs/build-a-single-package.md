@@ -57,7 +57,7 @@ make menuconfig
 编译：
 
 ```
-make package/wifidog/compile V=99
+make package/wifidog/compile -j V=99
 ```
 ![make wifidog ipk](images/make-wifidog-ipk.png)
 
@@ -110,6 +110,16 @@ FirewallRuleSet global {
 
 ![wifidog start](images/wifidog-start.png)
 ![wifidog portal](images/wifidog-portal.png)
+
+## 编译所有包 compile all packages
+
+编译所有包耗时很长，请自行尝试。指令如下：
+
+```
+sed -i 's/# CONFIG_ALL .*/CONFIG_ALL=y/' .config
+make defconfig
+make package/compile -i -j V=99
+```
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="docs-build-a-single-package" data-title="编译package" data-url="http://openwrt.io/docs/build-a-single-package/"></div>
