@@ -13,6 +13,7 @@ pages:
     - '编译固件': 'docs/build-firmware.md'
     - '开发package': 'docs/create-package.md'
     - 'docker编译package': 'docs/build-openwrt-package-using-docker.md'
+    - 'docker CI搭建opkg源': 'docs/create-opkg-package-repository-using-docker-ci.md'
 - 云插件:
     - '开发极路由云插件': 'docs/create-gee-app.md'
 - 厂商:
