@@ -92,9 +92,19 @@ opkg install easycwmp
 
 ![opkg install easycwmp](images/opkg-install-easycwmp.png)
 
-经过这个实验发现opkg软件源是可修改的，然后就可以用opkg自动安装了，解决了依赖问题，非常方便。本站提供的软件源有这些：
+经过这个实验发现opkg软件源是可修改的，然后就可以用opkg自动安装了，解决了依赖问题，非常方便。常用的软件源有这些：
 
 ### 极路由gee ralink opkg 源（j1s、 j2、 j3）
+
+官方源：
+
+```
+src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ralink-HC5661/0.9011.1.9228s/packages
+src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ralink-HC5761/0.9012.1.9277s/packages
+src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ralink-HC5861/0.9013.1.9653s/packages
+```
+
+本站源：
 
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
@@ -102,17 +112,41 @@ src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
 
 ### 极路由gee mediatek opkg 源（j1s新版HC5661A）
 
+官方源：
+
+```
+src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/mediatek-HC5661A/0.9011.1.9117s/packages
+```
+
+本站源：
+
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/gee/mediatek/packages
 ```
 
 ### 极路由gee ar71xx opkg 源（j1）
 
+官方源：
+
+```
+src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ar71xx-HC6361/0.9008.2.8061s/packages
+```
+
+本站源：
+
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ar71xx/packages
 ```
 
 ### 优酷 youku ramips opkg 源（YK-L1）
+
+官方源：
+
+```
+src/gz youku http://desktop.youku.com/openwrt/1.5.0418.50280/2/mtn/packages
+```
+
+本站源：
 
 ```
 src/gz openwrtio http://downloads.openwrt.io/vendors/youku/ramips/packages
