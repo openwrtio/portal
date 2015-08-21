@@ -11,9 +11,9 @@
 由于极路由本身已经是OpenWrt了，所以用sysupgrade直接刷机即可。
 
 ```
-scp ~/Downloads/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin root@192.168.199.1:/tmp/
 ssh root@192.168.199.1
 cd /tmp
+wget http://downloads.openwrt.io/barrier_breaker/14.07/ramips/mt7620a/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin
 sysupgrade -F -n openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin
 ```
 
@@ -45,7 +45,9 @@ ipset list gcn
 
 ![openwrt ipset test](images/openwrt-ipset-test.png)
 
-测试通过，实际搭建智能VPN路由器时，是放在dnsmasq里，指令如下：
+## 测试dnsmasq是否支持 ipset
+
+实际搭建智能VPN路由器时，是使用dnsmasq的ipset，指令如下：
 
 ```
 echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
