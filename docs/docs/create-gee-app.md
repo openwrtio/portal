@@ -56,13 +56,20 @@ status() {
 
 ## 发布到插件市场
 
-把脚本拷贝到路由器中，手动执行安装是可以的，但如何提供给大家方便的安装？极路由做了插件市场和开放平台，注册一个开发者帐号（[https://open.hiwifi.com/](https://open.hiwifi.com/)），申请一个应用，把插件打包上传，即可在插件市场里安装（[https://app.hiwifi.com/](https://app.hiwifi.com/)）。可通过“路由器后台”——》“云插件”进入市场，尚未发布时，在“我开发的”页面里安装。如果提交审核上线，用户就能看到了。
+把脚本拷贝到路由器中，可以手动安装，进行开发调试。
 
 ```
 git clone git://git.coding.net/openwrtio/super-developer-for-hiwifi-os.git
 cd super-developer-for-hiwifi-os
 tar -zcvf tmp.tgz ./*
+scp tmp.tgz root@192.168.199.1:/tmp/
+ssh root@192.168.199.1
+cd /tmp/
+tar -zxvf tmp.tgz
+(. ./script; install)
 ```
+
+如果开发测试完成，如何提供给大家方便的安装？极路由做了插件市场，注册一个开发者帐号（[https://open.hiwifi.com/](https://open.hiwifi.com/)），申请一个应用，把插件打包上传，即可在插件市场里安装（[https://app.hiwifi.com/](https://app.hiwifi.com/)）。可通过“路由器后台”——》“云插件”进入市场，尚未发布时，在“我开发的”页面里安装。如果提交审核上线，用户就能看到了。
 
 ![极路由 开放平台 应用列表](images/gee-open-platform-myapp.png)
 ![极路由 开放平台 应用 版本历史](images/gee-open-platform-myapp-version.png)
@@ -107,7 +114,7 @@ tar -zcvf tmp.tgz ./*
 
 极路由插件的网页配置支持这几种数据类型：text、textfile、radio、selection、checkbox，分别表示单行文本、多行文本、单选框、下拉菜单、多选框，具体说明请看官方文档：[https://open.hiwifi.com/open.php?m=doc&a=index#dev\_wiki](https://open.hiwifi.com/open.php?m=doc&a=index#dev_wiki)。
 
-每段输入都有个"variable"字段，在网页中输入的内容会被赋值给这些变量（**注意：极路由变量不能使用下划线**）。`script`脚本执行install时如何获取这些值？那就需要app配置文件了，比如这个app的是`lan-distribution.conf`，代码如下：
+每段输入都有个"variable"字段，在网页中输入的内容会被赋值给这些变量（**注意：极路由variable变量不能使用下划线**）。`script`脚本执行install时如何获取这些值？那就需要app配置文件了，比如这个app的是`lan-distribution.conf`，代码如下：
 
 ```
 file_uri={$fileuri}
@@ -180,9 +187,9 @@ set_opkg_src() {
 }
 ```
 
-可以看出这段代码添加了opkg软件仓库，然后安装了nodogsplash这个软件，这是因为极路由官方仓库里没有这个软件（也没有地方给大家提交软件），开发者就需要从别的地方安装。极路由有多个架构（比如ar71xx和ralink），所以代码里先判断架构，然后添加不同的源（源列表在以前的文档里：[http://openwrt.io/docs/opkg/#gee-ralink-opkg-j1s-j2-j3](http://openwrt.io/docs/opkg/#gee-ralink-opkg-j1s-j2-j3)）。
+可以看出这段代码添加了opkg软件仓库，然后安装了nodogsplash这个软件，这是因为极路由官方仓库里没有这个软件（也没有地方给大家提交软件），开发者就需要从别的地方安装。极路由有多个架构（ar71xx、ralink和mediatek），所以代码里先判断架构，然后添加不同的源（源列表在以前的文档里：[《opkg软件源》](/docs/opkg/#gee-ralink-opkg-j1s-j2-j3)）。
 
-通过网页（比如[http://downloads.openwrt.io/vendors/gee/ralink/packages/](http://downloads.openwrt.io/vendors/gee/ralink/packages/)）或者命令（`opkg list`）可以列出所有软件，如果缺少你想要的软件，怎么办？且听下回分解。
+可以看出极路由云插件是对opkg的再封装，提供了一个远程网页安装和配置界面，很方便。是一大创新，和luci本地网页界面的需求不同。
 
 ## 练习题
 
