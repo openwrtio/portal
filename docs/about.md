@@ -14,7 +14,7 @@
 ## 感谢
 
  * 感谢 [gentleface.com](http://www.gentleface.com/) 提供logo设计。
- * 感谢 [daocloud.io](https://www.daocloud.io/) 提供免费容器和主机。
+ * 感谢 [daocloud.io](https://account.daocloud.io/signup?invite_code=c8bkkhc1uq8i7z8nin93) 提供免费容器和主机。
  * 感谢 [七牛开源项目扶持计划](https://hd.qiniu.com/supportopen/) 提供1TB空间和每月5TB免费下载流量。
  * 感谢 [七牛云储存](https://portal.qiniu.com/signup?code=3lafkpsz7yes1) 提供每月10G免费下载流量。
  * 已有2位童鞋帮忙注册七牛，本站获得了每月10G下载流量奖励，感谢这些童鞋（未列出的同学请把个人主页发给我）：[mengskysama](http://blog.mengsky.net/)、[kinetis](http://icheese.me/)
