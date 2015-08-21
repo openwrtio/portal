@@ -136,7 +136,7 @@ TITLE | 否 | 简介
 
 ## 发布
 
-开发完毕，编译打包生成ipk，发布到opkg软件仓库里即可。请按照之前的文档[《搭建opkg软件仓库》](http://openwrt.io/docs/create-opkg-package-repository/)进行操作。
+开发完毕，编译打包生成ipk，发布到opkg软件仓库里即可。请按照之前的文档[《搭建opkg软件仓库》](/docs/create-opkg-package-repository/)进行操作。
 
 <!-- 多说评论框 start -->
 <div class="ds-thread" data-thread-key="docs-create-package" data-title="开发package" data-url="http://openwrt.io/docs/create-package/"></div>
