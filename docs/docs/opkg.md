@@ -110,7 +110,7 @@ src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ralink-HC5861/0.9
 src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
 ```
 
-### 极路由gee mediatek opkg 源（j1s新版HC5661A）
+### 极路由gee mediatek opkg 源（j1s新版 HC5661A）
 
 官方源：
 
