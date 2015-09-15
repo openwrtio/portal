@@ -6,11 +6,14 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ## Openwrt News 开源项目动态
 
-### 2015年7月，OpenWrt Chaos Calmer 15.05-rc3 候选版发布
+### 2015年9月，OpenWrt Chaos Calmer 15.05 正式版发布
 
- * Linux kernel updated to version 3.18.17
- * brcmfmac: support for BCM43602
- * Various security updates (e.g. openssl, curl)
+[http://downloads.openwrt.io/chaos\_calmer/15.05/](http://downloads.openwrt.io/chaos\_calmer/15.05/)
+
+ * Linux kernel updated to version 3.18
+ * Improved Security Features
+ * Improved Networking Support
+ * Platform and Driver Support
 
 ### 2014年10月，OpenWrt Barrier Breaker 14.07 正式版发布
 
