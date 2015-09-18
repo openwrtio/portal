@@ -10,21 +10,13 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 厂商      |                     开放root                                   | /根目录可写 | 开放OpenWrt SDK | OpenWrt版本 | 内核版本 | 内网远程控制 | 插件商城
 ----------|----------------------------------------------------------------|-------------|-----------------|-------------|----------|--------------|-------------
+[领势Linksys](http://www.linksys.com/cn/)    | 是      | 是          | 是\([下载](http://downloads.openwrt.io/chaos_calmer/15.05/mvebu/generic/)\) | 15.05 | 3.18.20 | 无 | 无
 [极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载](http://downloads.openwrt.io/vendors/gee/)\) | 12.09 | 3.3.8 | 有 | 有
 [优酷](http://yj.youku.com/ott/lyb)      | 否                                                             | 是          | 否              | 12.09 | 2.6.36 | 有      | 无
 [小米](http://miwifi.com/)      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 12.09 | 2.6.36 | 有      | 有
 [魔豆](http://www.modouwifi.com/)      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.openwrt.io/vendors/modou/)\) | 12.09 | 2.6.36 | 无 | 有
 
 ## OOBE 出厂自带OpenWrt的硬件
-
-### linksys 领势
-
-[http://www.linksys.com/cn/](http://www.linksys.com/cn/)
-
-上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
----------|------|------|---------|----------|---------|-----|-----|------|----|-----
-2015年7月 | WRT1900AC v2 | [京东￥1798](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEABUGURMR05aZRsoY0toWAZcPklaYEwdTV1wRRBBC3tXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFg9QHVoXBg%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABAAVBlETEdOWg%3D%3D) | 14.07 | Marvell 88F6820 | 双核1.3G | 128M | 512M | 600M | AC 1300M | 5x 1000M
-2015年7月 | WRT1200AC | [京东￥1298](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEANdH0RMR05aZW86Q0NzeCdrOXdgEA48HjtUWXZjLE1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFQFVGVkXBw%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABADXR9ETEdOWg%3D%3D) | 14.07 | Marvell 88F6820 | 双核1.3G | 128M | 512M | 400M | AC 867M | 5x 1000M
 
 ### gee 极路由
 
@@ -54,7 +46,8 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
-2015年6月 | 新小米路由R2D | [￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxIEEwZdE0RMR05aZWYCfGkRZj5lORJKaXRQfyUXRVZyJmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSBBMGXRNETEdOWg%3D%3D) | | Boardcom BCM4709C | 双核1.4G | 512M | 256M | 300M | 867M | 4x 1000M
+2015年8月 | 小米路由器青春版 | [京东￥89](http://union.click.jd.com/jdc?e=&p=AyIBZRprFQsWBFIZUyVGTV8LRGtMR1dGXgVFTUdGW0pADgpQTFtLG1IRARUFXQQCUF5PNyJTXXQEaG4KeCIPWEtEFgEMVEsbGSUXVyUAEwRUH1ocARs3VRtaFQYiNzRpa15sEzdlG14QARYCVxteHAETBGUc&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscBhEAVxNETEdOWg%3D%3D) | 12.09 | MTK MT7628N | 580 | 16M | 64M | 300M | | 3x 100m
+2015年6月 | 新小米路由R2D | [京东￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxIEEwZdE0RMR05aZWYCfGkRZj5lORJKaXRQfyUXRVZyJmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSBBMGXRNETEdOWg%3D%3D) | | Boardcom BCM4709C | 双核1.4G | 512M | 256M | 300M | 867M | 4x 1000M
 2014年4月 | 小米路由R1D | [京东￥699](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcAFwFWHERMR05aZUYZVGkVbCBiPm8Fa28Jc0Fjd3AGCmtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABcBVhxETEdOWg%3D%3D) | | Boardcom BCM4709 | 双核1G | 32M | 256M | 300M | 867M | 3x 1000M
 2014年4月 | 小米路由mini | [京东￥129](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxYEGgdTG0RMR05aZXgPD0pOBRx5OXZwFkFUQ1xRaVQDNWtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsWBBoHUxtETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | 867M | 3x 100M
 
@@ -67,6 +60,15 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 2014年6月 | 魔豆路由M101 | [京东￥199](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxAAEwVTEkRMR05aZWIyfHR1AANrOWcYVmcXUh9Qe2cHMF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsQABMFUxJETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 128M | 128M | 300M | 433M | 3x 100M
 
 ## Flash OpenWrt 需要手动刷机的硬件
+
+### linksys 领势（厂商官方提供开源固件）
+
+[http://www.linksys.com/cn/](http://www.linksys.com/cn/)
+
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+2015年7月 | WRT1900AC v2 | [京东￥1798](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEABUGURMR05aZRsoY0toWAZcPklaYEwdTV1wRRBBC3tXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFg9QHVoXBg%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABAAVBlETEdOWg%3D%3D) | 15.05 | Marvell 88F6820 | 双核1.3G | 128M | 512M | 600M | AC 1300M | 5x 1000M
+2015年7月 | WRT1200AC | [京东￥1248](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxMAEANdH0RMR05aZW86Q0NzeCdrOXdgEA48HjtUWXZjLE1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTIiB1AZXRUCFQFVGVkXBw%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsTABADXR9ETEdOWg%3D%3D) | 15.05 | Marvell 88F6820 | 双核1.3G | 128M | 512M | 400M | AC 867M | 5x 1000M
 
 ### buffalo 巴法络
 
