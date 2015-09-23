@@ -30,6 +30,10 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ## Openwrt Vendors News 智能路由器厂商新闻
 
+### 2015年9月，魅族路由器 mini pro 和 mini 发布
+
+两款配置相同之处：MTK MT7628AN、16M ROM、64M RAM、OpenWrt，区别是：mini pro支持5G，￥199；mini不支持5G，￥99。官网 [http://www.meizu.com/smart/router/summary.html](http://www.meizu.com/smart/router/summary.html)。
+
 ### 2015年8月，小米路由器 青春版 发布
 
 配置：MTK MT7628N、16M ROM、64M RAM、OpenWrt 12.09，[京东￥89](http://union.click.jd.com/jdc?e=&p=AyIBZRprFQsWBFIZUyVGTV8LRGtMR1dGXgVFTUdGW0pADgpQTFtLG1IRARUFXQQCUF5PNyJTXXQEaG4KeCIPWEtEFgEMVEsbGSUXVyUAEwRUH1ocARs3VRtaFQYiNzRpa15sEzdlG14QARYCVxteHAETBGUc&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscBhEAVxNETEdOWg%3D%3D)，官网 [http://www.mi.com/miwifilite/](http://www.mi.com/miwifilite/)。
