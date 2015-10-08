@@ -6,6 +6,7 @@ title: 文档
 
 rom版本        | 极3 HC5861 | 极2 HC5761 | 极1s新款 HC5661A
 ---------------|------------|------------|-----------------
+0.9015.1.10299s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150928-4c870d01.bin) | |
 0.9013.1.9653s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150801-805354de.bin) |
 0.9012.1.9277s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin) | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150603-d1929a87.bin)
 0.9011.1.9228s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150527-5bc6d079.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150527-99cca6fc.bin) | 
