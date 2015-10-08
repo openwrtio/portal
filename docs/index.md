@@ -30,6 +30,10 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ## Openwrt Vendors News 智能路由器厂商新闻
 
+### 2015年10月，Linksys 发布 WRT1900ACS开源路由器
+
+配置：双核1.6GHz、128M ROM、512M RAM、厂商官方提供OpenWrt开源固件。出厂预装了最新版本的OpenWrt CHaos Calmer 15.05。
+
 ### 2015年9月，魅族路由器 mini pro 和 mini 发布
 
 两款配置相同之处：MTK MT7628AN、16M ROM、64M RAM、OpenWrt，区别是：mini pro支持5G，￥199；mini不支持5G，￥99。官网 [http://www.meizu.com/smart/router/summary.html](http://www.meizu.com/smart/router/summary.html)。

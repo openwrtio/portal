@@ -18,6 +18,14 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 ## OOBE 出厂自带OpenWrt的硬件
 
+### linksys 领势
+
+[http://www.linksys.com/cn/](http://www.linksys.com/cn/)
+
+上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
+---------|------|------|---------|----------|---------|-----|-----|------|----|-----
+2015年10月 | WRT1900ACS | $229 | 15.05 | | 双核1.6G | 128M | 512M | 600M | AC 1300M | 5x 1000M
+
 ### gee 极路由
 
 [http://www.hiwifi.com/](http://www.hiwifi.com/)
