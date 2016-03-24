@@ -4,21 +4,25 @@ title: 文档
 
 ## 极路由固件下载
 
-rom版本        | 极3 HC5861 | 极2 HC5761 | 极1s新款 HC5661A
----------------|------------|------------|-----------------
-0.9015.1.10299s | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150928-4c870d01.bin) | |
-0.9013.1.9653s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150801-805354de.bin) |
-0.9012.1.9277s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin) | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150603-d1929a87.bin)
-0.9011.1.9228s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150527-5bc6d079.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150527-99cca6fc.bin) | 
-0.9011.1.9117s | | | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150518-50bf0edc.bin) | |
-0.9010.1.8595s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150318-5db29eb5.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150319-21e48669.bin) | 
-0.9004.3685s   | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-2014060900.bin) | 
-更多           | [查看](http://downloads.openwrt.io/vendors/gee/ralink/) | [查看](http://downloads.openwrt.io/vendors/gee/ralink/) | [查看](http://downloads.openwrt.io/vendors/gee/mediatek/)
+rom版本        | 极3 HC5861 | 极2新款 HC5761A | 极2老款 HC5761 | 极1s新款 HC5661A
+---------------|------------|-----------------|----------------|------------------
+0.9017.1.11380s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20151225-9b846fe9.bin) | [下载](http://ur.ikcd.net/HC5761A-sysupgrade-20151225-3e92b3d9.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20151225-e8c2c158.bin) | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20151225-0c14834a.bin)
+0.9016.1.10769s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20151120-1b82b142.bin) | [下载](http://ur.ikcd.net/HC5761A-sysupgrade-20151120-aca7359a.bin) | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20151120-cf095275.bin) | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20151119-a92157d2.bin)
+0.9015.1.10299s | | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150928-4c870d01.bin) |
+0.9013.1.9653s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150801-3c058db6.bin) | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150801-805354de.bin) |
+0.9012.1.9277s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150603-15fa16e2.bin) | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150603-3356d35e.bin) | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150603-d1929a87.bin)
+0.9011.1.9228s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150527-5bc6d079.bin) | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150527-99cca6fc.bin) | 
+0.9011.1.9117s | | | | [下载](http://ur.ikcd.net/HC5661A-sysupgrade-20150518-50bf0edc.bin)
+0.9010.1.8595s | [下载](http://ur.ikcd.net/HC5861-sysupgrade-20150318-5db29eb5.bin) | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-20150319-21e48669.bin) | 
+0.9004.3685s   | | | [下载](http://ur.ikcd.net/HC5761-sysupgrade-2014060900.bin) | 
+更多           | [查看](http://downloads.openwrt.io/vendors/gee/ralink/) | [查看](http://downloads.openwrt.io/vendors/gee/mediatek/) | [查看](http://downloads.openwrt.io/vendors/gee/ralink/) | [查看](http://downloads.openwrt.io/vendors/gee/mediatek/)
 
 已停产型号的固件下载：
 
- * 极1s HC5661 ： [http://downloads.openwrt.io/vendors/gee/ralink/](http://downloads.openwrt.io/vendors/gee/ralink/)
+ * 极2老款 HC5761、极1s老款 HC5661 ： [http://downloads.openwrt.io/vendors/gee/ralink/](http://downloads.openwrt.io/vendors/gee/ralink/)
  * 极1 HC6361 ： [http://downloads.openwrt.io/vendors/gee/ar71xx/](http://downloads.openwrt.io/vendors/gee/ar71xx/)
+
+极路由官网ROM下载：[http://www.hiwifi.com/rom](http://www.hiwifi.com/rom)
 
 在极路由里执行`tcpdump`，然后在网页后台点升级然后取消，即可抓取极路由rom官方下载链接，然后打开`a.cap`搜索`bin`即可。指令如下：
 
