@@ -1,4 +1,5 @@
 site_name: 'OpenWrt.io'
+site_url: 'http://openwrt.io/'
 pages:
 - 首页: 'index.md'
 - Openwrt文档:
