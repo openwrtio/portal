@@ -5,7 +5,7 @@ before_install:
 - sudo pip install mkdocs
 - wget -O /tmp/gmirror-2.2.2.tar.gz https://github.com/sinkcup/gmirror/archive/2.2.2.tar.gz
 - tar -zxvf /tmp/gmirror-2.2.2.tar.gz -C /tmp/
-- cp /tmp/gmirror-2.2.2/portal.*.sh ./
+- cp /tmp/gmirror-2.2.2/*.sh ./
 install:
 - bash ./portal.build.sh
 script:
