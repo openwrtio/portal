@@ -3,9 +3,9 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -y curl discount unzip python-pip
 - sudo pip install mkdocs
-- wget -O /tmp/gmirror-2.2.2.tar.gz https://github.com/sinkcup/gmirror/archive/2.2.2.tar.gz
-- tar -zxvf /tmp/gmirror-2.2.2.tar.gz -C /tmp/
-- cp /tmp/gmirror-2.2.2/*.sh ./
+- wget -O /tmp/gmirror-2.3.0.tar.gz https://github.com/sinkcup/gmirror/archive/2.3.0.tar.gz
+- tar -zxvf /tmp/gmirror-2.3.0.tar.gz -C /tmp/
+- cp /tmp/gmirror-2.3.0/*.sh ./
 install:
 - bash ./portal.build.sh
 script:
