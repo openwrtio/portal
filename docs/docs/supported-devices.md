@@ -11,7 +11,7 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 厂商      |                     开放root                                   | /根目录可写 | 开放OpenWrt SDK | OpenWrt版本 | 内核版本 | 内网远程控制 | 插件商城
 ----------|----------------------------------------------------------------|-------------|-----------------|-------------|----------|--------------|-------------
 [领势Linksys](http://www.linksys.com/cn/)    | 是      | 是          | 是\([下载](http://downloads.openwrt.io/chaos_calmer/15.05/mvebu/generic/)\) | 15.05 | 3.18.20 | 无 | 无
-[极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载](http://dl.openwrt.io/vendors/gee/)\) | 12.09 | 3.3.8 | 有 | 有
+[极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载](http://dl.openwrt.io/vendors/gee/)\) | 14.07 | 3.10.49 | 有 | 有
 [优酷](http://yj.youku.com/ott/lyb)      | 否                                                             | 是          | 否              | 12.09 | 2.6.36 | 有      | 无
 [小米](http://miwifi.com/)      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 12.09 | 2.6.36 | 有      | 有
 [魔豆](http://www.modouwifi.com/)      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://dl.openwrt.io/vendors/modou/)\) | 12.09 | 2.6.36 | 无 | 有
@@ -32,10 +32,12 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
-2015年5月 | 极1s HC5661A | [京东￥109](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxUDFgJUGERMR05aZUwZVVF7XjZsO0B4UV4SXScVUUxePntXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVAxYCVBhETEdOWg%3D%3D) | 12.09 | MTK MT7628A | 580 | 16M | 128M | 300M | | 5x 100M
-2015年3月 | 极3 HC5861 | [京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZU4MbgJLRDNdOH0Bc34pTiFSAU0ZXF1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 867M | WAN: 1x 100M, LAN: 1x 1000M, 1x 100M
-2014年6月 | 极1s硬盘版 HC5663 | [京东￥209](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcAFwRRG0RMR05aZRxSRnFad1BMOxZ4TF5RcwBUWwwDJ11XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXABcEURtETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
-2013年11月 | 极2 HC5761 | [京东￥179](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxULFwFXGkRMR05aZUUbclFKTwxJO3UFe18AHFJHcHRmKHtXGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVCxcBVxpETEdOWg%3D%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 433M | 2x 100M
+2017年4月 | 极3Pro | [京东￥249](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFwoUB1ESUyVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVkdBBIDXBNETEdOWmVbAWZpT3EGTDkdAUJXVVMOEmp2Ux5NVxlsEQZVHUcUBQ4HUwpbEgkQBl4aXSUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcCxEGUx9eFTIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UXChQHURJTCltXWwg%3D) | | MTK MT7620A | 580 | 128M | 128M | 300M | AC 867M | 3x 1000M
+2016年11月 | 极4 HC5962 | [京东329](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFwYWAlcYXyVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVkRBhcFVh9ETEdOWmViLUgLFHgOHD5RWk98VkQDS1oaQktrVxlsEQZVHUcUBQ4HUwpbEgkRBV4aXiUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcBBQOUBJfEDIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UXBhYCVxhfCltXWwg%3D) | MTK MT7621AT | 14.07 | 双核880M | 128M | 256M | 300M | 867M | 4x 1000M
+2015年5月 | 极1s HC5661A | [京东￥89](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFQITA1AaWCVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVsVAxYCVBhETEdOWmVsOkdlW1BLZjtxSkxCPUcufEB3dVFrVxlsEQZVHUcUBQ4HUwpbEgkQAl4bXSUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcCxcDUxpeFjIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UVAhMDUBpYCltXWwg%3D) | 12.09 | MTK MT7628A | 580 | 16M | 128M | 300M | | 5x 100M
+2015年3月 | 极3 HC5861 | [京东￥269](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFQAbAFMaXCVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWmUdGW9CYnEJbTtncBNcUk8SaQtGfSddVxlsEQZVHUcUBQ4HUwpbEgkQA14aXCUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcCxYGUhpeEzIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UVABsAUxpcCltXWwg%3D) | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 867M | WAN: 1x 100M, LAN: 1x 1000M, 1x 100M
+2014年6月 | 极1s硬盘版 HC5663 | ￥209 | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
+2013年11月 | 极2 HC5761 | ￥179 | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | AC 433M | 2x 100M
 2013年11月 | 极1s HC5661 | ￥109 | 12.09 | MTK MT7620A | 580 | 16M | 128M | 300M | | 5x 100M
 2013年3月 | 极1 HC6361 | ￥199 | 12.09 | Atheros AR9331 | 400 | 16M | 64M | 150M | | 3x 100M
 
