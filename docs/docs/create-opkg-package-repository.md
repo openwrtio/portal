@@ -67,6 +67,4 @@ opkg install nodogsplash
 
 ![gee opkg add src](images/gee-opkg-add-src-install-nodogsplash.png)
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-create-opkg-package-repository" data-title="搭建自己的opkg软件仓库" data-url="http://openwrt.io/docs/create-opkg-package-repository/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-create-opkg-package-repository"></div>

@@ -109,6 +109,4 @@ OpenWrt路由器也是Linux，操作步骤和上面几乎一样，大家自行�
  * 《百度某系统存在注入可导致内网被渗透》 [http://www.wooyun.org/bugs/wooyun-2010-019150](http://www.wooyun.org/bugs/wooyun-2010-019150)
  * 《一次失败的漫游百度内部网络过程》 [http://www.wooyun.org/bugs/wooyun-2010-050906](http://www.wooyun.org/bugs/wooyun-2010-050906)
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-smart-vpn" data-title="智能VPN" data-url="http://openwrt.io/docs/smart-vpn/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-smart-vpn"></div>

@@ -65,6 +65,4 @@ echo -e "server=/fonts.googleapis.com/223.5.5.5\nipset=/fonts.googleapis.com/gcn
 极路由 | [http://openwrt.io/docs/gee/](http://openwrt.io/docs/gee/)
 优酷路由宝 | [http://openwrt.io/docs/youku/](http://openwrt.io/docs/youku/)
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-flashing" data-title="刷机" data-url="http://openwrt.io/docs/flashing/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-flashing"></div>

@@ -92,6 +92,4 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
  | WNDR3700 v4 | [京东￥299](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXBMBEw5XBAJQXk83DHkMfQtxVCF5Bw8KFH8pSDNoSWt8AxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJTISAlcdWBUGFgZVH1sd&t=W1dCFBBFC1pXUwkEAEAdQFkJBVwTARMOVwQCUF5P) | 14.07 | Atheros AR9344 | 560 | 128M | 128M | 300M | n 300M | 5x 1000M
  | WNDR3400 v2 | [京东￥299](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFXhcHGwBWBAJQXk83UG1aSQJ0UDd4PGdqQB1XfFJcZ29zAxdXJQATBFQfWhwBGzdVG1oVBiI3NGlrJQ%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBV4XBxsAVgQCUF5P) | 14.07 | Broadcom BCM5357 | 530 | 8M | 64M | 300M | n 300M | 5x 100M
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-supported-devices" data-title="支持的硬件" data-url="http://openwrt.io/docs/supported-devices/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-supported-devices"></div>

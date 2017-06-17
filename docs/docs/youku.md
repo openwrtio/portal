@@ -74,6 +74,4 @@ rom            | YK-L1
 ---------------|------------------------------------------
 1.5.0507.51292 | 2.6.36-1-14c532299308555749eb1db620b27288
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-youku" data-title="优酷土豆路由宝" data-url="http://openwrt.io/docs/youku/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-youku"></div>

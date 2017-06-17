@@ -105,6 +105,4 @@ PS：如果写入firmware报错“Could not open mtd device: firmware”和“Ca
 ![miwifi-openwrt-web](images/miwifi-openwrt-web.png)
 ![telnet-miwifi-openwrt-cc-firmware](images/telnet-miwifi-openwrt-cc-firmware.png)
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-build-firmware" data-title="编译OpenWrt固件" data-url="http://openwrt.io/docs/build-firmware/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-build-firmware"></div>

@@ -69,6 +69,4 @@ script:
 
 可以看到install、before_script都执行成功了，但上传到七牛时出错了，这是因为环境变量里缺少七牛密码，只能等daocloud做好网页环境变量时，才可以。大家可以关注[DaoCloud的微博](http://weibo.com/u/5424712657)。
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-create-opkg-package-repository-using-docker-ci" data-title="使用docker持续集成搭建opkg软件仓库" data-url="http://openwrt.io/docs/create-opkg-package-repository-using-docker-ci/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-create-opkg-package-repository-using-docker-ci"></div>

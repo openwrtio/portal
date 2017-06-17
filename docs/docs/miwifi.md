@@ -62,6 +62,4 @@ find / -name '1.txt'
 
 ![miwifi r2d test disk writeable after reboot](images/miwifi-r2d-test-disk-writeable-after-reboot.png)
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-miwifi" data-title="小米路由器" data-url="http://openwrt.io/docs/miwifi/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-miwifi"></div>

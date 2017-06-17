@@ -63,6 +63,4 @@ rom            | kernel vermagic
 1.8.01         | 2.6.36-1-556ed122e9e29dcbf944aed81514ec3d
 1.7.01         | 2.6.36-1-c17fba68da07c209be57c5995a445463
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-modou" data-title="魔豆" data-url="http://openwrt.io/docs/modou/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-modou"></div>

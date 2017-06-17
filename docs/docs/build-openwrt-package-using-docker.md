@@ -58,6 +58,4 @@ make package/feeds/admin/owmp/compile -j V=99
 极路由ralink | docker pull openwrtio/openwrt-sdk-gee-ralink
 极路由mediatek | docker pull openwrtio/openwrt-sdk-gee-mediatek
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-build-openwrt-package-using-docker" data-title="使用Docker编译OpenWrt package" data-url="http://openwrt.io/docs/build-openwrt-package-using-docker/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-build-openwrt-package-using-docker"></div>

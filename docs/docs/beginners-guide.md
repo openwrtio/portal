@@ -16,6 +16,4 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。以前的�
 
 这两点都是国内特有的需求，目前国内有好几家厂商生产OpenWrt智能路由器，而国外很少有厂商生产，只能是爱好者刷机（在普通路由器上安装OpenWrt）。
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-beginners-guide" data-title="新手指南" data-url="http://openwrt.io/docs/beginners-guide/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-beginners-guide"></div>

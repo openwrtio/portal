@@ -25,6 +25,4 @@ curl -T firmware.img tftp://192.168.1.1
 
 Netgear WNDR3700 and WNDR37AV [http://wiki.openwrt.org/toh/netgear/wndr3700](http://wiki.openwrt.org/toh/netgear/wndr3700)
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-netgear" data-title="网件" data-url="http://openwrt.io/docs/netgear/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-netgear"></div>

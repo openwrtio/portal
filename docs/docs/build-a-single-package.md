@@ -121,6 +121,4 @@ make defconfig
 make package/compile -i -j V=99
 ```
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-build-a-single-package" data-title="编译package" data-url="http://openwrt.io/docs/build-a-single-package/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-build-a-single-package"></div>

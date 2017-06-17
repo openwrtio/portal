@@ -195,6 +195,4 @@ set_opkg_src() {
 
 尝试为“超级开发者”做一个网页配置界面，实现修改端口的功能。
 
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="docs-create-gee-app" data-title="开发极路由云插件" data-url="http://openwrt.io/docs/create-gee-app/"></div>
-<!-- 多说评论框 end -->
+<div id="comments" data-thread-key="docs-create-gee-app"></div>
