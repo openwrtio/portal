@@ -22,7 +22,7 @@ rom版本        | 极4增强版 HC5962 | 极3Pro C312B | 极3S C312A | 极1s新
  * 极2老款 HC5761、极1s老款 HC5661 ： [http://dl.openwrt.io/vendors/gee/ralink/](http://dl.openwrt.io/vendors/gee/ralink/)
  * 极1 HC6361 ： [http://dl.openwrt.io/vendors/gee/ar71xx/](http://dl.openwrt.io/vendors/gee/ar71xx/)
 
-极路由官网ROM下载：[http://www.hiwifi.com/rom](http://www.hiwifi.com/rom)
+极路由官网ROM下载：[https://www.hiwifi.com/rom](https://www.hiwifi.com/rom)
 
 在极路由里执行`tcpdump`，然后在网页后台点升级然后取消，即可抓取极路由rom官方下载链接，然后打开`a.cap`搜索`bin`即可。指令如下：
 

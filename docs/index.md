@@ -46,9 +46,13 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ## Openwrt Vendors News 智能路由器厂商新闻
 
+### 2017年4月，极3Pro 发布
+
+配置：MTK MT7620A 单核580Mhz、128M ROM、128M RAM、[京东￥249](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFwoUB1ESUyVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVkdBBIDXBNETEdOWmVbAWZpT3EGTDkdAUJXVVMOEmp2Ux5NVxlsEQZVHUcUBQ4HUwpbEgkQBl4aXSUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcCxEGUx9eFTIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UXChQHURJTCltXWwg%3D)。官网 [www.hiwifi.com](https://www.hiwifi.com/j3pro-view)
+
 ### 2016年11月，极路由4 增强版 发布
 
-配置：MTK MT7621AT 双核880MHz、128M ROM、256M RAM、Openwrt 14.07、Linux version 3.10.49、 [京东329](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFwYWAlcYXyVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVkRBhcFVh9ETEdOWmViLUgLFHgOHD5RWk98VkQDS1oaQktrVxlsEQZVHUcUBQ4HUwpbEgkRBV4aXiUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcBBQOUBJfEDIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UXBhYCVxhfCltXWwg%3D)。官网 [www.hiwifi.com/](http://www.hiwifi.com/j4turbo-view)
+配置：MTK MT7621AT 双核880MHz、128M ROM、256M RAM、Openwrt 14.07、Linux version 3.10.49、 [京东329](https://union-click.jd.com/jdc?e=0&p=AyIOZRprFwYWAlcYXyVGTV8LRGtMR1dGFxBFC1pXUwkEAEAdQFkJBVkRBhcFVh9ETEdOWmViLUgLFHgOHD5RWk98VkQDS1oaQktrVxlsEQZVHUcUBQ4HUwpbEgkRBV4aXiUAEwRUH1ocARs3VRtaFQYiN1Uaa0NsEgZUGloUAxoGUitcHAERBV0aWBAyEgJdHVwcBBQOUBJfEDIVNwZGC0dYRlEDK2slMg%3D%3D&t=W1dCFFlQCxxKQgFHRE5XDVULR0UXBhYCVxhfCltXWwg%3D)。官网 [www.hiwifi.com](https://www.hiwifi.com/j4turbo-view)
 
 ### 2015年10月，Linksys 发布 WRT1900ACS开源路由器
 
@@ -72,7 +76,7 @@ OpenWrt是一款基于Linux的操作系统，主要用于路由器。…… \> [
 
 ### 2015年3月，极路由3发布
 
-配置：MTK MT7620A、16M ROM、128M RAM、OpenWrt 12.09，[京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZX0HRUBFeCFNORVgdn1VWylJYGcDKV1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D)，官网 [www.hiwifi.com](http://www.hiwifi.com/j3-para)。
+配置：MTK MT7620A、16M ROM、128M RAM、OpenWrt 12.09，[京东￥296](http://union.click.jd.com/jdc?e=&p=AyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxcLFQFUHERMR05aZX0HRUBFeCFNORVgdn1VWylJYGcDKV1XGTIQBlYaXxQLEQ5lG1sUAhY3ZXopJTI%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsXCxUBVBxETEdOWg%3D%3D)，官网 [www.hiwifi.com](https://www.hiwifi.com/j3-para)。
 
 ### 2014年12月，优酷土豆路由宝发布
 

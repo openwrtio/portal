@@ -28,7 +28,7 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 
 ### gee 极路由
 
-[http://www.hiwifi.com/](http://www.hiwifi.com/)
+[https://www.hiwifi.com/](https://www.hiwifi.com/)
 
 上市时间 | 型号 | 价格 | OpenWrt | Platform | CPU频率 | ROM | RAM | 2.4G | 5G | 有线
 ---------|------|------|---------|----------|---------|-----|-----|------|----|-----
