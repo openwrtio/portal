@@ -56,7 +56,7 @@ script:
     - sed -i -e "s|{src}|/root/openwrt/hc5761/bin/ralink/packages/|g" -e "s|{access_key}|$qiniu_access_key|g" -e "s|{secret_key}|$qiniu_secret_key|g" -e "s|{bucket}|downloads-openwrt-io|g" -e "s|{key_prefix}|vendors/gee/ralink/packages/|g" qiniu.json
     - qrsync --check-exist qiniu.json
     - qrsctl login $qiniu_user $qiniu_passwd
-    - qrsctl cdn/refresh downloads-openwrt-io http://downloads.openwrt.io/vendors/gee/ralink/packages/Packages.gz
+    - qrsctl cdn/refresh downloads-openwrt-io http://dl.openwrt.io/vendors/gee/ralink/packages/Packages.gz
 ```
 
 可以看到install阶段安装了七牛上传工具，before_script阶段编译了package并生成索引，script阶段上传到七牛。

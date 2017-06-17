@@ -11,10 +11,10 @@ OpenWrt路由器分为两种：出厂自带OpenWrt系统的（OOBE 开箱即用�
 厂商      |                     开放root                                   | /根目录可写 | 开放OpenWrt SDK | OpenWrt版本 | 内核版本 | 内网远程控制 | 插件商城
 ----------|----------------------------------------------------------------|-------------|-----------------|-------------|----------|--------------|-------------
 [领势Linksys](http://www.linksys.com/cn/)    | 是      | 是          | 是\([下载](http://downloads.openwrt.io/chaos_calmer/15.05/mvebu/generic/)\) | 15.05 | 3.18.20 | 无 | 无
-[极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载](http://downloads.openwrt.io/vendors/gee/)\) | 12.09 | 3.3.8 | 有 | 有
+[极路由](http://hiwifi.com/)    | 是\([自助开启](http://bbs.hiwifi.com/thread-74899-1-1.html)\)      | 是          | 是\([下载](http://dl.openwrt.io/vendors/gee/)\) | 12.09 | 3.3.8 | 有 | 有
 [优酷](http://yj.youku.com/ott/lyb)      | 否                                                             | 是          | 否              | 12.09 | 2.6.36 | 有      | 无
 [小米](http://miwifi.com/)      | 是\([自助开启](http://miwifi.com/miwifi_open.html)\)           | 否          | 否              | 12.09 | 2.6.36 | 有      | 有
-[魔豆](http://www.modouwifi.com/)      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://downloads.openwrt.io/vendors/modou/)\) | 12.09 | 2.6.36 | 无 | 有
+[魔豆](http://www.modouwifi.com/)      | 是\([自助开启](http://bbs.modouwifi.cn/thread-8825-1-1.html)\) | 否          | 是\([下载](http://dl.openwrt.io/vendors/modou/)\) | 12.09 | 2.6.36 | 无 | 有
 
 ## OOBE 出厂自带OpenWrt的硬件
 

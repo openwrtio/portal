@@ -40,7 +40,7 @@ telnet 192.168.11.1
 
 ```
 sed -i '/^src\/gz youku /d' /etc/opkg.conf
-sed -i '1isrc/gz openwrtio http://downloads.openwrt.io/vendors/youku/ramips/packages' /etc/opkg.conf
+sed -i '1isrc/gz openwrtio http://dl.openwrt.io/vendors/youku/ramips/packages' /etc/opkg.conf
 opkg update
 opkg install dropbear
 /etc/init.d/dropbear start

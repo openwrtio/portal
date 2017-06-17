@@ -45,7 +45,7 @@ opkg install http://upgradeipk.ikcd.net/upgrade_file/ralink-HC5761/0.9012.1.9277
 
 
 ```
-opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/easycwmp_1.0.5-c1768af11a485af3f396aaf2941fd28349e48053_ralink.ipk
+opkg install http://dl.openwrt.io/vendors/gee/ralink/packages/easycwmp_1.0.5-c1768af11a485af3f396aaf2941fd28349e48053_ralink.ipk
 ```
 
 安装失败，报错："satisfy\_dependencies\_for: Cannot satisfy the following dependencies for easycwmp: libmicroxml shflags"，如图：
@@ -55,8 +55,8 @@ opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/easycwmp_1.
 这说明easycwmp依赖libmicroxml和shflags，需要先安装它们。解决办法是：在网上找到libmicroxml和shflags的下载链接，安装它，指令如下：
 
 ```
-opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/libmicroxml_2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa_ralink.ipk
-opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/shflags_1.0.3-1_ralink.ipk
+opkg install http://dl.openwrt.io/vendors/gee/ralink/packages/libmicroxml_2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa_ralink.ipk
+opkg install http://dl.openwrt.io/vendors/gee/ralink/packages/shflags_1.0.3-1_ralink.ipk
 ```
 ![opkg install shflags error: depend getopt](images/opkg-install-depend-getopt.png)
 
@@ -80,7 +80,7 @@ cat /etc/opkg.conf
 然后在`/etc/opkg.d`里的每个文件都加入一行，指令如下：
 
 ```
-find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages'
+find /etc/opkg.d/ -name '*.conf' | xargs sed -i '2isrc/gz openwrtio http://dl.openwrt.io/vendors/gee/ralink/packages'
 ```
 
 然后再尝试安装easycwmp，指令如下：
@@ -107,7 +107,7 @@ src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ralink-HC5861/0.9
 本站源：
 
 ```
-src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ralink/packages
+src/gz openwrtio http://dl.openwrt.io/vendors/gee/ralink/packages
 ```
 
 ### 极路由gee mediatek opkg 源（j1s新版 HC5661A）
@@ -121,7 +121,7 @@ src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/mediatek-HC5661A/
 本站源：
 
 ```
-src/gz openwrtio http://downloads.openwrt.io/vendors/gee/mediatek/packages
+src/gz openwrtio http://dl.openwrt.io/vendors/gee/mediatek/packages
 ```
 
 ### 极路由gee ar71xx opkg 源（j1）
@@ -135,7 +135,7 @@ src/gz barrier_breaker https://upgrade.hiwifi.com/upgrade_file/ar71xx-HC6361/0.9
 本站源：
 
 ```
-src/gz openwrtio http://downloads.openwrt.io/vendors/gee/ar71xx/packages
+src/gz openwrtio http://dl.openwrt.io/vendors/gee/ar71xx/packages
 ```
 
 ### 优酷 youku ramips opkg 源（YK-L1）
@@ -149,7 +149,7 @@ src/gz youku http://desktop.youku.com/openwrt/1.5.0418.50280/2/mtn/packages
 本站源：
 
 ```
-src/gz openwrtio http://downloads.openwrt.io/vendors/youku/ramips/packages
+src/gz openwrtio http://dl.openwrt.io/vendors/youku/ramips/packages
 ```
 
 <div id="comments" data-thread-key="docs-opkg"></div>

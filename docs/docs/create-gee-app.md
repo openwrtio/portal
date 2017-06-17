@@ -176,7 +176,7 @@ set_opkg_src() {
     if [ $? -eq 0 ]; then
         return 0
     fi
-    openwrtio_src='http://downloads.openwrt.io/vendors/gee/'$arch'/packages'
+    openwrtio_src='http://dl.openwrt.io/vendors/gee/'$arch'/packages'
     #gee use /etc/opkg.conf and /etc/opkg.d/*.conf
     echo 'src/gz openwrtio '$openwrtio_src >> /etc/opkg.conf
     for one_file in $(find /etc/opkg.d/ -iname '*.conf'); do

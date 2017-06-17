@@ -25,9 +25,9 @@ pages:
     - '网件': 'docs/netgear.md'
 - 关于我们: 'about.md'
 theme: 'flatly'
-repo_url: 'http://downloads.openwrt.io/'
+repo_url: 'http://dl.openwrt.io/'
 repo_name: '下载'
-site_favicon: favicon.ico
+site_favicon: '/favicon.ico'
 google_analytics: ['UA-63908544-1', 'openwrt.io']
 copyright: <a title="帮助我们：点击注册七牛，本站将获得流量" href="https://portal.qiniu.com/signup?code=3lafkpsz7yes1" target="_blank"><img src="/qiniu-transparent.png" alt="七牛云储存" /></a><a rel="nofollow" href="http://www.miitbeian.gov.cn/">苏ICP备15020382号-1</a>
     <script type="text/javascript">
