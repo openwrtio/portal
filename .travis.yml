@@ -2,9 +2,9 @@ sudo: required
 dist: trusty
 language: bash
 before_install:
-- wget -O /tmp/gmirror.tar.gz https://github.com/sinkcup/gmirror/archive/2.4.1.tar.gz
+- wget -O /tmp/gmirror.tar.gz https://github.com/sinkcup/gmirror/archive/2.4.2.tar.gz
 - tar -zxvf /tmp/gmirror.tar.gz -C /tmp/
-- cp /tmp/gmirror-2.4.1/*.sh ./
+- cp /tmp/gmirror-2.4.2/*.sh ./
 - bash ./before_install.sh
 - sudo pip install mkdocs-bootswatch
 install:
