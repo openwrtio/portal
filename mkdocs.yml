@@ -43,7 +43,7 @@ copyright: <a title="帮助我们：点击注册七牛，本站将获得流量�
         if (!document.getElementById("zhuge-js")) {var a = document.createElement("script");var verDate = new Date();
         var verStr = verDate.getFullYear().toString()+ verDate.getMonth().toString() + verDate.getDate().toString();
         a.type = "text/javascript";a.id = "zhuge-js";a.async = !0;
-        a.src = location.protocol + "://sdk.zhugeio.com/zhuge.min.js?v=" + verStr;
+        a.src = "//sdk.zhugeio.com/zhuge.min.js?v=" + verStr;
         a.onerror = function(){window.zhuge.identify = window.zhuge.track = function(ename, props, callback){if(callback && Object.prototype.toString.call(callback) === '[object Function]')callback();};};
         var c = document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a, c);window.zhuge._init(b, x)}};
         window.zhuge.load('f6a2e8eed9e447ea89a63b87763ec7df');//配置应用的AppKey
