@@ -29,7 +29,7 @@ repo_url: 'http://dl.openwrt.io/'
 repo_name: '下载'
 site_favicon: '/favicon.ico'
 google_analytics: ['UA-63908544-1', 'openwrt.io']
-copyright: <a title="帮助我们：点击注册七牛，本站将获得流量" href="https://portal.qiniu.com/signup?code=3lafkpsz7yes1" target="_blank"><img src="/qiniu-transparent.png" alt="七牛云储存" /></a><a rel="nofollow" href="http://www.miitbeian.gov.cn/">苏ICP备15020382号-1</a>
+copyright: <a title="帮助我们：点击注册七牛，本站将获得流量供大家下载使用" href="https://portal.qiniu.com/signup?code=3lafkpsz7yes1" target="_blank"><img src="https://developer.qiniu.com/assets/qiniu-transparent-9c01479a982463fdafe1c97a0254a99140eea97dcc6891489b5752a557b0212f.png" alt="七牛云" /></a><a rel="nofollow" href="http://www.miitbeian.gov.cn/">苏ICP备15020382号-1</a>
     <script type="text/javascript">
         if (window.location.protocol === "http:") {
             window.location.href = "https:" + window.location.href.slice(5);
