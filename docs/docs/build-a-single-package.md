@@ -2,7 +2,7 @@
 
 ## 准备编译环境 prerequisites
 
-OpenWrt是Linux，所以使用Linux系统进行开发很方便。本文档使用Ubuntu系统（官网：[ubuntu.com](http://www.ubuntu.com/download/desktop)，国内镜像下载：[mirrors.aliyun.com](http://mirrors.aliyun.com/ubuntu-releases/15.04/)），建议使用最新稳定版15.04 Desktop 64-bit或者14.04 Server 64-bit。如果用的是Windows或OSX，可以用免费的虚拟机Virtual Box（官网：[virtualbox.org](https://www.virtualbox.org/)，国内镜像下载：[gmirror.org](http://gmirror.org/#virtualbox)）安装Ubuntu。
+OpenWrt是Linux，所以使用Linux系统进行开发很方便。本文档使用Ubuntu系统（官网：[ubuntu.com](http://www.ubuntu.com/download/desktop)，国内镜像下载：[mirrors.163.com](http://mirrors.163.com/ubuntu-releases/)），建议使用最新稳定版。如果用的是Windows或macOS，可以用免费的虚拟机Virtual Box（官网：[virtualbox.org](https://www.virtualbox.org/)，国内镜像下载：[gmirror.org](http://gmirror.org/#virtualbox)）安装Ubuntu。
 
 在Ubuntu系统中执行下列命令，安装依赖：
 
@@ -14,17 +14,9 @@ sudo apt-get install build-essential ccache flex gawk gettext git liblzma-dev li
 
 如果路由器厂商提供了专用的OpenWrt SDK，那是最好的，优先使用。有这些厂商提供了：
 
-极路由`hc5761-20140619.tar.gz`官方下载：
+极路由：[http://doc.hiwifi.com/docs/sdk_usage](http://doc.hiwifi.com/docs/sdk_usage)
 
-[https://code.hiwifi.com/wiki/hiwifi/sdk-howto](https://code.hiwifi.com/wiki/hiwifi/sdk-howto)
-
-魔豆`openwrt-2.6.36.tar.bz2`和`buildroot-mipsel.tar.bz2`官方下载：
-
-[http://bbs.modouwifi.cn/thread-8261-1-1.html](http://bbs.modouwifi.cn/thread-8261-1-1.html)
-
-如果下载链接已失效，请向厂商反馈。或者在本站进行挖掘（[downloads.openwrt.io](http://downloads.openwrt.io/)），因为本站已经把它们都下载下来了。
-
-不过由于魔豆根目录不可写，ipk无法安装，有SDK也没法用。
+如果下载链接失效了，请向厂商反馈。或者在本站进行挖掘（[dl.openwrt.io](http://dl.openwrt.io/)），因为本站已经把它们都下载下来了。
 
 本文档继续以极路由为例，下载解压缩到`~/openwrt/hc5761`。
 
