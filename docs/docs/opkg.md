@@ -23,7 +23,7 @@ tcpdump -i br-lan
 
 ![opkg install](images/gee-opkg-install.png)
 
-可以发现opkg和Ubuntu的apt-get类似，和OSX下的brew也类似，是一个网络软件仓库，一行指令就能自动下载安装软件，非常方便。如果对Ubuntu和OSX都不熟悉，请先自行学习一个，再来折腾路由器。
+可以发现opkg和Ubuntu/Debian的apt类似，和macOS下的brew也类似，是一个网络软件仓库，一个命令就能自动下载安装软件，非常方便。如果对Ubuntu和macOS都不熟悉，请先自行学习一个，再来折腾路由器。
 
 ## wget ipk 手动下载安装
 
@@ -92,7 +92,23 @@ opkg install easycwmp
 
 ![opkg install easycwmp](images/opkg-install-easycwmp.png)
 
-经过这个实验发现opkg软件源是可修改的，然后就可以用opkg自动安装了，解决了依赖问题，非常方便。常用的软件源有这些：
+经过这个实验发现opkg软件源是可修改的，然后就可以用opkg自动安装了，解决了依赖问题，非常方便。
+
+## 常用的opkg软件源
+
+### Openwrt.org opkg官方软件源
+
+官方源：
+
+```
+src/gz openwrt_packages http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/packages
+```
+
+本站对官方源做了国内镜像CDN加速：
+
+```
+src/gz openwrt_packages http://downloads.openwrt.io/chaos_calmer/15.05.1/ramips/mt7620/packages/packages
+```
 
 ### 极路由gee ralink opkg 源（j1s、 j2、 j3）
 
