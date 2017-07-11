@@ -36,9 +36,9 @@ gzip -9c ./Packages > ./Packages.gz
 
 ![ipkg-make-index.sh](images/ipkg-make-index.png)
 
-### 上传到七牛云储存
+### 上传到云储存
 
-然后上传到哪里？建议放在云储存CDN上，下载速度快，而不要放在自己服务器上。本文以七牛云储存（每月免费10GB流量，官网[qiniu.com](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)）为例，新建一个空间，上传文件（建议输入自定义前缀，也就是目录，比如gee/ralink/packages/），如图：
+然后上传到哪里？建议放在云储存CDN上，下载速度快，而不要放在自己服务器上。本文以七牛云（每月免费10GB流量，官网[qiniu.com](https://portal.qiniu.com/signup?code=3lafkpsz7yes1)）为例，新建一个空间，上传文件（建议输入自定义前缀，也就是目录，比如gee/ralink/packages/），如图：
 
 ![qiniu create bucket](images/qiniu-create-bucket.png)
 ![qiniu web upload](images/qiniu-web-upload.png)
